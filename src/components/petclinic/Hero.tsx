@@ -1,5 +1,5 @@
 import { PawPrint } from "lucide-react";
-import heroDog from "@/assets/hero-dog.jpg";
+import heroDoctor from "@/assets/doutor-hero.png.asset.json";
 import { HOURS } from "@/lib/petclinic";
 
 const hoursLabel = HOURS.map((h) => h.time).join(" · Seg a Sex / Sáb");
