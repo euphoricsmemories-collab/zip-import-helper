@@ -58,10 +58,10 @@ export function Hero() {
         <div className="mx-auto w-full max-w-[34rem] lg:-mt-8 lg:max-w-none">
           <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-primary/15">
             <img
-              src={heroDog}
-              alt="Cão golden retriever sorrindo em ambiente clínico na PetClin"
-              width={1024}
-              height={1024}
+              src={heroDoctor.url}
+              alt="Veterinário da PetClin sorrindo segurando três filhotes de shih tzu na recepção da clínica"
+              width={1059}
+              height={1512}
               className="aspect-[4/4.4] w-full object-cover object-top"
               fetchPriority="high"
             />
