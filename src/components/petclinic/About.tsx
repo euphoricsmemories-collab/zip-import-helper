@@ -77,15 +77,6 @@ export function About() {
             ))}
           </ul>
 
-          <a
-            href="#estrutura"
-            className="mt-9 inline-flex items-center gap-2 font-semibold text-primary transition-colors hover:text-primary/75"
-          >
-            Conheça nossa estrutura
-            <span aria-hidden="true" className="text-lg leading-none">
-              →
-            </span>
-          </a>
         </Reveal>
       </div>
     </section>
