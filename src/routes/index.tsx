@@ -8,6 +8,7 @@ import { Footer } from "@/components/petclinic/Footer";
 import { Header } from "@/components/petclinic/Header";
 import { Hero } from "@/components/petclinic/Hero";
 import { Services } from "@/components/petclinic/Services";
+import { PatientsGallery } from "@/components/petclinic/PatientsGallery";
 import { Universe } from "@/components/petclinic/Universe";
 import { WhatsAppFab } from "@/components/petclinic/WhatsAppFab";
 
@@ -41,6 +42,7 @@ function Index() {
         <Hero />
         <Services />
         <About />
+        <PatientsGallery />
         <Differentials />
         <Universe />
         <BathTosa />
