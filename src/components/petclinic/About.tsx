@@ -1,5 +1,6 @@
 import { Check, HeartHandshake, MapPin } from "lucide-react";
-import vetCare from "@/assets/vet-care.jpg";
+import vetCare from "@/assets/doutor-exame.jpg.asset.json";
+const vetCareUrl = vetCare.url;
 import { Reveal } from "@/components/petclinic/Reveal";
 
 const TRUST_ITEMS = [
@@ -20,10 +21,10 @@ export function About() {
           />
           <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-navy/10">
             <img
-              src={vetCare}
-              alt="Veterinária da PetClinic examinando um cão com estetoscópio"
-              width={1024}
-              height={1024}
+              src={vetCareUrl}
+              alt="Veterinário da PetClin examinando uma gata com luvas e estetoscópio"
+              width={1248}
+              height={1254}
               loading="lazy"
               className="aspect-[4/4.2] w-full object-cover"
             />
