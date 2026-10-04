@@ -1,4 +1,4 @@
-import galleryProducts from "@/assets/gallery-products.jpg";
+import petShopAsset from "@/assets/petshop.jpg.asset.json";
 import { Reveal } from "@/components/petclinic/Reveal";
 
 interface GalleryItem {
@@ -8,10 +8,12 @@ interface GalleryItem {
   className?: string;
 }
 
+const petShopUrl = petShopAsset.url;
+
 const ITEMS: GalleryItem[] = [
   {
-    src: galleryProducts,
-    alt: "Estante organizada do pet shop com produtos e acessórios",
+    src: petShopUrl,
+    alt: "Loja do pet shop da PetClin com o logotipo aceso, rações, petiscos e acessórios nas prateleiras",
     caption: "Pet shop",
     className: "md:col-span-2",
   },
