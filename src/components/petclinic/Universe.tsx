@@ -27,7 +27,7 @@ export function Universe() {
             Universo PetClin
           </p>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Carinho, confiança e profissionalismo em cada detalhe.
+            Seu pet merece o melhor. Conheça nosso Pet Shop!
           </h2>
         </Reveal>
 
