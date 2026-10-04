@@ -1,6 +1,4 @@
-import galleryCat from "@/assets/gallery-cat.jpg";
 import galleryDog from "@/assets/gallery-dog.jpg";
-import galleryExam from "@/assets/gallery-exam.jpg";
 import galleryProducts from "@/assets/gallery-products.jpg";
 import { Reveal } from "@/components/petclinic/Reveal";
 
@@ -17,17 +15,6 @@ const ITEMS: GalleryItem[] = [
     alt: "Cão de grande porte em um dia ensolarado ao ar livre",
     caption: "Cães de todos os portes",
     className: "md:col-span-1 md:row-span-2",
-  },
-  {
-    src: galleryExam,
-    alt: "Veterinária examinando um beagle na consulta",
-    caption: "Consultas com atenção",
-    className: "md:col-span-3",
-  },
-  {
-    src: galleryCat,
-    alt: "Gato de pelagem branca olhando para a câmera",
-    caption: "Cuidado para gatos",
   },
   {
     src: galleryProducts,
