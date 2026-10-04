@@ -1,4 +1,3 @@
-import galleryDog from "@/assets/gallery-dog.jpg";
 import galleryProducts from "@/assets/gallery-products.jpg";
 import { Reveal } from "@/components/petclinic/Reveal";
 
@@ -10,12 +9,6 @@ interface GalleryItem {
 }
 
 const ITEMS: GalleryItem[] = [
-  {
-    src: galleryDog,
-    alt: "Cão de grande porte em um dia ensolarado ao ar livre",
-    caption: "Cães de todos os portes",
-    className: "md:col-span-1 md:row-span-2",
-  },
   {
     src: galleryProducts,
     alt: "Estante organizada do pet shop com produtos e acessórios",
