@@ -212,11 +212,6 @@ export function Services() {
             );
           })}
         </div>
-
-        <Reveal className="mt-10 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-          <PawPrint className="size-4 text-primary" aria-hidden="true" />
-          Atendimento para cães e gatos, com agendamento direto pelo WhatsApp.
-        </Reveal>
       </div>
     </section>
   );
