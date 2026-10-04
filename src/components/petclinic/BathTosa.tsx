@@ -1,7 +1,9 @@
 import { MessageCircle, Sparkles } from "lucide-react";
-import bathTosa from "@/assets/bath-tosa.jpg";
+import bathTosaAsset from "@/assets/banho-e-tosa.png.asset.json";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
+
+const bathTosa = bathTosaAsset.url;
 
 const HIGHLIGHTS = [
   "Banho com produtos adequados para cada pelagem",
