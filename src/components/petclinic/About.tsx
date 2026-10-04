@@ -1,5 +1,6 @@
 import { Check, HeartHandshake, MapPin } from "lucide-react";
-import vetCare from "@/assets/vet-care.jpg";
+import vetCare from "@/assets/doutor-exame.jpg.asset.json";
+const vetCareUrl = vetCare.url;
 import { Reveal } from "@/components/petclinic/Reveal";
 
 const TRUST_ITEMS = [
