@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Cross,
   FlaskConical,
-  PawPrint,
   ScanHeart,
   Scissors,
   ShoppingBag,
