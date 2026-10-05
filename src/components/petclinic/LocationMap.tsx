@@ -11,7 +11,7 @@ export function LocationMap() {
         width={1024}
         height={1536}
         loading="lazy"
-        className="mx-auto block w-full h-auto"
+        className="mx-auto block w-full h-auto rounded-lg"
       />
     </section>
   );
