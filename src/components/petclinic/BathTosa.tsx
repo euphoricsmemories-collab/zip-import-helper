@@ -1,5 +1,5 @@
 import { MessageCircle, Sparkles } from "lucide-react";
-import bathTosaAsset from "@/assets/banho-e-tosa.png.asset.json";
+import bathTosaAsset from "@/assets/banho-e-tosa-final.png.asset.json";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 
@@ -60,16 +60,13 @@ export function BathTosa() {
           <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-navy/10 transition-transform duration-500 hover:rotate-0">
             <img
               src={bathTosa}
-              alt="Arte promocional da PetClin: cão de pelagem marrom com toalha de patinhas segurando uma escova de banho na boca, com o texto Hoje é dia de Banho & Tosa"
-              width={1153}
-              height={1441}
+              alt="Arte promocional da PetClin: cão de pelagem marrom com toalha de patinhas segurando uma escova de banho na boca, com o texto Hoje é dia de Banho & Tosa e a etiqueta Tosa com carinho"
+              width={1122}
+              height={1402}
               loading="lazy"
-              className="aspect-[4/4.4] w-full rotate-1 object-cover"
+              className="aspect-[4/5] w-full rotate-1 object-cover"
             />
           </div>
-          <span className="absolute -bottom-5 right-8 rounded-full border border-border/60 bg-white/95 px-5 py-2.5 text-sm font-semibold text-foreground shadow-lg shadow-navy/10 backdrop-blur">
-            Tosa com carinho 🐾
-          </span>
         </Reveal>
       </div>
     </section>
