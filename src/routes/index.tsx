@@ -7,6 +7,7 @@ import { Differentials } from "@/components/petclinic/Differentials";
 import { Footer } from "@/components/petclinic/Footer";
 import { Header } from "@/components/petclinic/Header";
 import { Hero } from "@/components/petclinic/Hero";
+import { LocationMap } from "@/components/petclinic/LocationMap";
 import { Services } from "@/components/petclinic/Services";
 import { PatientsGallery } from "@/components/petclinic/PatientsGallery";
 import { Universe } from "@/components/petclinic/Universe";
@@ -48,6 +49,7 @@ function Index() {
         <BathTosa />
         <Diagnostics />
         <CtaSection />
+        <LocationMap />
       </main>
       <Footer />
       <WhatsAppFab />
