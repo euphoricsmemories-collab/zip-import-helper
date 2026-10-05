@@ -45,6 +45,7 @@
   --color-navy: var(--navy);
   --color-navy-foreground: var(--navy-foreground);
   --color-teal-soft: var(--teal-soft);
+  --color-services-sky: var(--services-sky);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -98,6 +99,7 @@
   --navy: oklch(0.365 0.102 257.8);
   --navy-foreground: oklch(1 0 0);
   --teal-soft: oklch(0.955 0.03 186);
+  --services-sky: #5ebccf;
   --chart-1: oklch(0.579 0.098 192.1);
   --chart-2: oklch(0.569 0.215 22.8);
   --chart-3: oklch(0.365 0.102 257.8);
