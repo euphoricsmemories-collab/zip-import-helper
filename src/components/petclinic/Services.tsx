@@ -127,7 +127,7 @@ export function Services() {
   const { cardRefs, activeIndex } = useActiveCard(SERVICES.length);
 
   return (
-    <section id="servicos" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="servicos" className="scroll-mt-24 bg-services-sky py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <p className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-primary uppercase">
