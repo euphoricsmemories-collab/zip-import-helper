@@ -60,9 +60,9 @@ export function BathTosa() {
           <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-navy/10 transition-transform duration-500 hover:rotate-0">
             <img
               src={bathTosa}
-              alt="Poodle branco recém-tosado em mesa de grooming na PetClin"
-              width={1024}
-              height={1024}
+              alt="Arte promocional da PetClin: cão de pelagem marrom com toalha de patinhas segurando uma escova de banho na boca, com o texto Hoje é dia de Banho & Tosa"
+              width={1153}
+              height={1441}
               loading="lazy"
               className="aspect-[4/4.4] w-full rotate-1 object-cover"
             />
