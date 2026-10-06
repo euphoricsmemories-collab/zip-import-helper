@@ -1,4 +1,4 @@
-import { Clock, MapPin, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { ADDRESS, ADDRESS_CITY, HOURS, WHATSAPP_DEFAULT_URL } from "@/lib/petclinic";
 
@@ -45,14 +45,10 @@ export function CtaSection() {
           </a>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 text-sm text-white/75 sm:flex-row sm:gap-8">
-            <span className="inline-flex items-center gap-2">
-              <MapPin className="size-4" aria-hidden="true" />
+            <span>
               {ADDRESS} — {ADDRESS_CITY}
             </span>
-            <span className="inline-flex items-center gap-2">
-              <Clock className="size-4" aria-hidden="true" />
-              {HOURS.map((h) => `${h.days}: ${h.time}`).join(" · ")}
-            </span>
+            <span>{HOURS.map((h) => `${h.days}: ${h.time}`).join(" · ")}</span>
           </div>
         </Reveal>
       </div>
