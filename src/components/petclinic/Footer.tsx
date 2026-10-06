@@ -4,8 +4,6 @@ import {
   ADDRESS_CITY,
   HOURS,
   INSTAGRAM_HANDLE,
-  INSTAGRAM_URL,
-  NAV_LINKS,
   WHATSAPP_DEFAULT_URL,
   WHATSAPP_DISPLAY,
 } from "@/lib/petclinic";
