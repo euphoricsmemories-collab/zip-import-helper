@@ -25,7 +25,7 @@ export function Hero() {
             Clínica Veterinária em Penedo, Alagoas
           </span>
 
-          <h1 className="mt-6 max-w-xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 max-w-xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:mt-6 sm:text-5xl lg:text-6xl">
             Seu pet merece{" "}
             <span className="relative inline-block text-primary italic">
               cuidado
@@ -47,7 +47,7 @@ export function Hero() {
             em cada fase da vida.
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground sm:mt-6">
             Na PetClin, unimos cuidado veterinário, tecnologia e carinho para proporcionar mais
             saúde e qualidade de vida ao seu melhor amigo.
           </p>
