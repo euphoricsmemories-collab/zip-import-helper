@@ -1,6 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/petclinic/Reveal";
-import { ADDRESS, ADDRESS_CITY, HOURS, WHATSAPP_DEFAULT_URL } from "@/lib/petclinic";
+import { WHATSAPP_DEFAULT_URL } from "@/lib/petclinic";
+import { LocationCard } from "@/components/petclinic/LocationCard";
 
 export function CtaSection() {
   return (
@@ -44,11 +45,8 @@ export function CtaSection() {
             Agendar pelo WhatsApp
           </a>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 text-sm text-white/75 sm:flex-row sm:gap-8">
-            <span>
-              {ADDRESS} — {ADDRESS_CITY}
-            </span>
-            <span>{HOURS.map((h) => `${h.days}: ${h.time}`).join(" · ")}</span>
+          <div className="mt-10">
+            <LocationCard />
           </div>
         </Reveal>
       </div>
