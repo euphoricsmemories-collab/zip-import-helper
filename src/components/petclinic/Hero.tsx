@@ -6,7 +6,7 @@ const hoursLabel = HOURS.map((h) => h.time).join(" · Seg a Sex / Sáb");
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-28 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
+    <section id="inicio" className="relative overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
       {/* Fundo decorativo */}
       <div
         aria-hidden="true"
@@ -17,7 +17,7 @@ export function Hero() {
         }}
       />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-8">
+      <div className="mx-auto grid max-w-7xl items-center gap-6 px-5 sm:px-8 sm:gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-8">
         {/* Lado esquerdo */}
         <div className="animate-fade-in [animation-duration:700ms]">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-teal-soft px-4 py-1.5 text-xs font-semibold tracking-wide text-foreground/80">
