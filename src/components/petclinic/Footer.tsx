@@ -82,7 +82,7 @@ export function Footer() {
         </nav>
 
         {/* Contato */}
-        <div className="md:col-span-3">
+        <div className="md:col-span-4">
           <h3 className="text-sm font-bold tracking-widest text-white uppercase">Contato</h3>
           <ul className="mt-5 space-y-4 text-sm">
             <li className="flex items-start gap-3">
