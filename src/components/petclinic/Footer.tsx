@@ -5,7 +5,6 @@ import {
   HOURS,
   INSTAGRAM_HANDLE,
   INSTAGRAM_URL,
-  NAV_LINKS,
   WHATSAPP_DEFAULT_URL,
   WHATSAPP_DISPLAY,
 } from "@/lib/petclinic";
@@ -68,22 +67,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Navegação */}
-        <nav className="md:col-span-2" aria-label="Links do rodapé">
-          <h3 className="text-sm font-bold tracking-widest text-white uppercase">Navegação</h3>
-          <ul className="mt-5 space-y-3 text-sm">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <a href={link.href} className="transition-colors hover:text-white">
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
         {/* Serviços */}
-        <nav className="md:col-span-3" aria-label="Serviços da PetClin">
+        <nav className="md:col-span-4" aria-label="Serviços da PetClin">
           <h3 className="text-sm font-bold tracking-widest text-white uppercase">Serviços</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {FOOTER_SERVICES.map((service) => (
@@ -97,7 +82,7 @@ export function Footer() {
         </nav>
 
         {/* Contato */}
-        <div className="md:col-span-3">
+        <div className="md:col-span-4">
           <h3 className="text-sm font-bold tracking-widest text-white uppercase">Contato</h3>
           <ul className="mt-5 space-y-4 text-sm">
             <li className="flex items-start gap-3">
