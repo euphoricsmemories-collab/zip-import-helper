@@ -78,13 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PetClin — Clínica Veterinária em Penedo" },
-      { name: "description", content: "Cuidado veterinário, diagnóstico e pet shop em Penedo, Alagoas." },
-      { name: "author", content: "PetClin" },
-      { property: "og:title", content: "PetClin — Clínica Veterinária em Penedo" },
-      { property: "og:description", content: "Cuidado veterinário, diagnóstico e pet shop em Penedo, Alagoas." },
+      { title: "Lovable App" },
+      { name: "description", content: "Lovable Generated Project" },
+      { name: "author", content: "Lovable" },
+      { property: "og:title", content: "Lovable App" },
+      { property: "og:description", content: "Lovable Generated Project" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -97,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap",
       },
-      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
