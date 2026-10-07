@@ -84,6 +84,17 @@
   color: color-mix(in oklab, var(--color-primary) 22%, transparent);
 }
 
+.services-background {
+  background:
+    radial-gradient(ellipse 42% 18% at 86% 14%, color-mix(in oklab, var(--color-background) 38%, transparent), transparent 76%),
+    radial-gradient(ellipse 38% 16% at 8% 64%, color-mix(in oklab, var(--color-background) 30%, transparent), transparent 78%),
+    linear-gradient(to bottom, #d9f2f1 0%, #ddf2f4 50%, #e1f3f7 100%);
+}
+
+.services-heart {
+  color: color-mix(in oklab, var(--color-primary) 15%, transparent);
+}
+
 @keyframes hero-heart-float {
   0%,
   100% {
