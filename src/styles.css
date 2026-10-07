@@ -95,6 +95,18 @@
   color: color-mix(in oklab, var(--color-primary) 15%, transparent);
 }
 
+.about-background {
+  background: linear-gradient(
+    to bottom,
+    #d9f2f1 0%,
+    #e6f7f5 26%,
+    #f5fcfc 40%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+}
+
+
 @keyframes hero-heart-float {
   0%,
   100% {
