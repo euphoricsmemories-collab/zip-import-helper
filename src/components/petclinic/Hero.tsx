@@ -1,4 +1,4 @@
-import { PawPrint } from "lucide-react";
+import { Heart, PawPrint, Stethoscope } from "lucide-react";
 import heroDoctor from "@/assets/doutor-hero.png.asset.json";
 import { HOURS } from "@/lib/petclinic";
 
@@ -8,14 +8,12 @@ export function Hero() {
   return (
     <section id="inicio" className="relative overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
       {/* Fundo decorativo */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(52rem 30rem at 88% -6%, var(--color-teal-soft) 0%, transparent 62%), radial-gradient(40rem 26rem at -8% 30%, color-mix(in oklab, var(--color-teal-soft) 65%, transparent) 0%, transparent 60%)",
-        }}
-      />
+      <div aria-hidden="true" className="hero-background pointer-events-none absolute inset-0 -z-10">
+        <Heart className="hero-heart hero-heart-float absolute top-[14%] left-[7%] size-4 fill-current" />
+        <Heart className="hero-heart hero-heart-float-delayed absolute top-[42%] left-[45%] size-3 fill-current" />
+        <Heart className="hero-heart hero-heart-float-slow absolute right-[8%] bottom-[18%] size-5 fill-current" />
+        <Heart className="hero-heart hero-heart-float absolute right-[38%] bottom-[8%] size-3 fill-current [animation-delay:-6s]" />
+      </div>
 
       <div className="mx-auto grid max-w-7xl items-center gap-6 px-5 sm:px-8 sm:gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-8">
         {/* Lado esquerdo */}
@@ -55,7 +53,7 @@ export function Hero() {
         </div>
 
         {/* Imagem principal */}
-        <div className="mx-auto w-full max-w-[34rem] lg:-mt-8 lg:max-w-none">
+        <div className="relative mx-auto w-full max-w-[34rem] lg:-mt-8 lg:max-w-none">
           <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-primary/15">
             <img
               src={heroDoctor.url}
@@ -65,6 +63,16 @@ export function Hero() {
               className="aspect-[4/4.4] w-full object-cover object-top"
               fetchPriority="high"
             />
+          </div>
+
+          <div className="hero-card-float absolute bottom-5 left-3 flex w-40 items-center gap-2.5 rounded-xl border border-border/50 bg-card/95 p-2.5 text-card-foreground shadow-xl shadow-navy/10 backdrop-blur-sm sm:bottom-7 sm:left-5">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-teal-soft text-primary">
+              <Stethoscope className="size-5" aria-hidden="true" />
+            </span>
+            <span className="min-w-0 leading-tight">
+              <strong className="block text-sm font-semibold">+10 anos</strong>
+              <span className="block text-[11px] text-muted-foreground">cuidando de pets</span>
+            </span>
           </div>
         </div>
       </div>
