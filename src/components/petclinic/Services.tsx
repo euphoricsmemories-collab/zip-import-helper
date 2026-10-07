@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Cross,
   FlaskConical,
+  Heart,
   ScanHeart,
   Scissors,
   ShoppingBag,
@@ -127,7 +128,15 @@ export function Services() {
   const { cardRefs, activeIndex } = useActiveCard(SERVICES.length);
 
   return (
-    <section id="servicos" className="scroll-mt-24 bg-services-sky py-20 sm:py-28">
+    <section id="servicos" className="services-background relative isolate scroll-mt-24 overflow-hidden py-20 sm:py-28">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <Heart className="services-heart hero-heart-float absolute top-[8%] left-[7%] size-4 fill-current" />
+        <Heart className="services-heart hero-heart-float-delayed absolute top-[31%] right-[8%] size-3 fill-current" />
+        <Heart className="services-heart hero-heart-float-slow absolute top-[56%] left-[3%] size-5 fill-current" />
+        <Heart className="services-heart hero-heart-float absolute right-[5%] bottom-[16%] size-4 fill-current [animation-delay:-6s]" />
+        <Heart className="services-heart hero-heart-float-delayed absolute bottom-[5%] left-[38%] size-3 fill-current" />
+      </div>
+
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <p className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-navy uppercase">
