@@ -11,7 +11,10 @@ const TRUST_ITEMS = [
 
 export function About() {
   return (
-    <section id="a-clinica" className="scroll-mt-24 overflow-hidden py-20 sm:py-28">
+    <section
+      id="a-clinica"
+      className="about-background scroll-mt-24 overflow-hidden py-20 sm:py-28"
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         {/* Composição visual */}
         <Reveal className="relative order-2 lg:order-1">
