@@ -75,15 +75,15 @@
 
 .hero-background {
   background:
-    radial-gradient(ellipse 52% 42% at 86% 2%, color-mix(in oklab, var(--color-teal-soft) 85%, transparent), transparent 70%),
-    radial-gradient(ellipse 44% 38% at 6% 26%, color-mix(in oklab, var(--color-services-sky) 22%, transparent), transparent 72%),
-    radial-gradient(ellipse 38% 32% at 72% 74%, color-mix(in oklab, var(--color-services-sky) 14%, transparent), transparent 74%),
-    radial-gradient(ellipse 34% 28% at 14% 90%, color-mix(in oklab, var(--color-teal-soft) 60%, transparent), transparent 70%),
+    radial-gradient(ellipse 52% 42% at 86% 2%, color-mix(in oklab, var(--color-teal-soft) 90%, transparent), transparent 70%),
+    radial-gradient(ellipse 44% 38% at 6% 26%, color-mix(in oklab, var(--color-services-sky) 30%, transparent), transparent 72%),
+    radial-gradient(ellipse 38% 32% at 72% 74%, color-mix(in oklab, var(--color-services-sky) 18%, transparent), transparent 74%),
+    radial-gradient(ellipse 34% 28% at 14% 90%, color-mix(in oklab, var(--color-teal-soft) 65%, transparent), transparent 70%),
     linear-gradient(
       160deg,
       var(--color-background) 4%,
-      color-mix(in oklab, var(--color-teal-soft) 55%, var(--color-background)) 55%,
-      var(--color-background) 96%
+      color-mix(in oklab, var(--color-teal-soft) 75%, var(--color-background)) 55%,
+      color-mix(in oklab, var(--color-services-sky) 8%, var(--color-background)) 96%
     );
 }
 
