@@ -6,7 +6,7 @@ const hoursLabel = HOURS.map((h) => h.time).join(" · Seg a Sex / Sáb");
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
+    <section id="inicio" className="relative isolate overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
       {/* Fundo decorativo */}
       <div aria-hidden="true" className="hero-background pointer-events-none absolute inset-0 -z-10">
         <Heart className="hero-heart hero-heart-float absolute top-[10%] left-[9%] size-4 fill-current" />
