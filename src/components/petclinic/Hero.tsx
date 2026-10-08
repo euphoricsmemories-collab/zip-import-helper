@@ -6,13 +6,17 @@ const hoursLabel = HOURS.map((h) => h.time).join(" · Seg a Sex / Sáb");
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
+    <section id="inicio" className="relative isolate overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
       {/* Fundo decorativo */}
       <div aria-hidden="true" className="hero-background pointer-events-none absolute inset-0 -z-10">
-        <Heart className="hero-heart hero-heart-float absolute top-[14%] left-[7%] size-4 fill-current" />
-        <Heart className="hero-heart hero-heart-float-delayed absolute top-[42%] left-[45%] size-3 fill-current" />
-        <Heart className="hero-heart hero-heart-float-slow absolute right-[8%] bottom-[18%] size-5 fill-current" />
-        <Heart className="hero-heart hero-heart-float absolute right-[38%] bottom-[8%] size-3 fill-current [animation-delay:-6s]" />
+        <Heart className="hero-heart hero-heart-float absolute top-[10%] left-[9%] size-4 fill-current" />
+        <Heart className="hero-heart hero-heart-float-delayed absolute top-[24%] left-[26%] size-2.5 fill-current" />
+        <Heart className="hero-heart hero-heart-float-slow absolute top-[38%] left-[6%] size-3 fill-current" />
+        <Heart className="hero-heart hero-heart-float absolute top-[30%] left-[46%] size-3.5 fill-current" />
+        <Heart className="hero-heart hero-heart-float-delayed absolute right-[12%] bottom-[34%] size-4 fill-current [animation-delay:-9s]" />
+        <Heart className="hero-heart hero-heart-float-slow absolute right-[26%] bottom-[12%] size-2.5 fill-current" />
+        <Heart className="hero-heart hero-heart-float absolute right-[6%] bottom-[58%] size-3 fill-current [animation-delay:-5s]" />
+        <Heart className="hero-heart hero-heart-float-slow absolute right-[44%] bottom-[6%] size-3 fill-current [animation-delay:-11s]" />
       </div>
 
       <div className="mx-auto grid max-w-7xl items-center gap-6 px-5 sm:px-8 sm:gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-8">
