@@ -19,6 +19,7 @@ import petshop from "@/assets/petshop.jpg.asset.json";
 import banhoTosa from "@/assets/banho-e-tosa-card.jpg.asset.json";
 import exames from "@/assets/exames-laboratoriais.jpg.asset.json";
 import ultrassom from "@/assets/ultrassonografia.jpg.asset.json";
+import cirurgias from "@/assets/cirurgias.jpg.asset.json";
 import fachada from "@/assets/petclin-fachada.png.asset.json";
 
 interface Service {
@@ -68,6 +69,7 @@ const SERVICES: Service[] = [
     icon: Cross,
     name: "Cirurgias",
     description: "Procedimentos realizados com protocolos de segurança e acompanhamento atento.",
+    image: cirurgias.url,
   },
   {
     icon: Syringe,
