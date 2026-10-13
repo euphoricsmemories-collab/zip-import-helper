@@ -16,6 +16,7 @@ import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 import { cn } from "@/lib/utils";
 import petshop from "@/assets/petshop.jpg.asset.json";
+import banhoTosa from "@/assets/banho-e-tosa-card.jpg.asset.json";
 import fachada from "@/assets/petclin-fachada.png.asset.json";
 
 interface Service {
@@ -47,6 +48,7 @@ const SERVICES: Service[] = [
     icon: Scissors,
     name: "Banho e Tosa",
     description: "Estética e bem-estar com calma, técnica e carinho em cada detalhe.",
+    image: banhoTosa.url,
   },
   {
     icon: FlaskConical,
