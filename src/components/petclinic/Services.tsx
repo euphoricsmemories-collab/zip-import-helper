@@ -15,6 +15,7 @@ import { useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 import { cn } from "@/lib/utils";
+import petshop from "@/assets/petshop.jpg.asset.json";
 import fachada from "@/assets/petclin-fachada.png.asset.json";
 
 interface Service {
@@ -40,6 +41,7 @@ const SERVICES: Service[] = [
     icon: ShoppingBag,
     name: "Pet Shop",
     description: "Produtos, rações e acessórios selecionados para o dia a dia do seu melhor amigo.",
+    image: petshop.url,
   },
   {
     icon: Scissors,
