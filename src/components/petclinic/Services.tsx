@@ -17,6 +17,7 @@ import { whatsappUrl } from "@/lib/petclinic";
 import { cn } from "@/lib/utils";
 import petshop from "@/assets/petshop.jpg.asset.json";
 import banhoTosa from "@/assets/banho-e-tosa-card.jpg.asset.json";
+import exames from "@/assets/exames-laboratoriais.jpg.asset.json";
 import fachada from "@/assets/petclin-fachada.png.asset.json";
 
 interface Service {
@@ -54,6 +55,7 @@ const SERVICES: Service[] = [
     icon: FlaskConical,
     name: "Exames Laboratoriais",
     description: "Análises que ajudam o veterinário a acompanhar a saúde do seu pet com segurança.",
+    image: exames.url,
   },
   {
     icon: ScanHeart,
