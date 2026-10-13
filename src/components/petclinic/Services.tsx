@@ -15,6 +15,7 @@ import { useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 import { cn } from "@/lib/utils";
+import fachada from "@/assets/petclin-fachada.png.asset.json";
 
 interface Service {
   icon: LucideIcon;
@@ -22,6 +23,7 @@ interface Service {
   description: string;
   featured?: boolean;
   wide?: boolean;
+  image?: string;
 }
 
 const SERVICES: Service[] = [
@@ -32,6 +34,7 @@ const SERVICES: Service[] = [
       "Consultas e acompanhamento da saúde do seu pet, com atenção em cada etapa da vida — da primeira visita ao cuidado contínuo.",
     featured: true,
     wide: true,
+    image: fachada.url,
   },
   {
     icon: ShoppingBag,
@@ -154,7 +157,8 @@ export function Services() {
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service, index) => {
-            const active = index === activeIndex;
+            const active = index === activeIndex || !!service.image;
+            const photo = service.image;
             return (
               <Reveal
                 key={service.name}
@@ -167,13 +171,20 @@ export function Services() {
                   }}
                   aria-current={active ? "true" : undefined}
                   className={cn(
-                    "group flex h-full flex-col justify-between gap-6 rounded-3xl border p-7 transition-[background-color,border-color,box-shadow,transform,color] duration-[550ms] ease-out motion-reduce:transition-none",
+                    "group relative isolate flex h-full flex-col overflow-hidden justify-between gap-6 rounded-3xl border p-7 transition-[background-color,border-color,box-shadow,transform,color] duration-[550ms] ease-out motion-reduce:transition-none",
                     active
                       ? "-translate-y-1 border-primary bg-primary text-primary-foreground shadow-xl shadow-primary/25"
                       : "border-border bg-white shadow-none hover:border-primary/40",
+                    photo && "min-h-80 border-primary/40",
                   )}
                 >
-                  <div>
+                  {photo && (
+                    <div aria-hidden="true" className="absolute inset-0 -z-10">
+                      <img src={photo} alt="" loading="lazy" className="size-full object-cover object-[50%_42%] transition-transform duration-700 group-hover:scale-[1.03]" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/45 to-transparent sm:bg-gradient-to-r sm:from-deep/90 sm:via-deep/50 sm:to-transparent" />
+                    </div>
+                  )}
+                  <div className={cn(photo && "max-w-md")}>
                     <span
                       className={cn(
                         "flex size-13 items-center justify-center rounded-2xl transition-colors duration-[550ms]",
