@@ -1,7 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { WHATSAPP_DEFAULT_URL } from "@/lib/petclinic";
-import { LocationCard } from "@/components/petclinic/LocationCard";
 
 export function CtaSection() {
   return (
@@ -44,10 +43,6 @@ export function CtaSection() {
             <MessageCircle className="size-5" aria-hidden="true" />
             Agendar pelo WhatsApp
           </a>
-
-          <div className="mt-10">
-            <LocationCard />
-          </div>
         </Reveal>
       </div>
     </section>

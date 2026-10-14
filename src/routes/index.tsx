@@ -10,7 +10,6 @@ import { Hero } from "@/components/petclinic/Hero";
 import { Services } from "@/components/petclinic/Services";
 import { PatientsGallery } from "@/components/petclinic/PatientsGallery";
 import { Universe } from "@/components/petclinic/Universe";
-import { WhatsAppFab } from "@/components/petclinic/WhatsAppFab";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,7 +49,6 @@ function Index() {
         <CtaSection />
       </main>
       <Footer />
-      <WhatsAppFab />
     </div>
   );
 }
