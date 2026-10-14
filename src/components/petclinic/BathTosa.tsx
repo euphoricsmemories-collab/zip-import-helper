@@ -1,9 +1,11 @@
 import { MessageCircle, Sparkles } from "lucide-react";
 import bathTosaAsset from "@/assets/banho-e-tosa-final.png.asset.json";
+import bathTosaBackgroundAsset from "@/assets/banho-e-tosa-background.png.asset.json";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 
 const bathTosa = bathTosaAsset.url;
+const bathTosaBackground = bathTosaBackgroundAsset.url;
 
 const HIGHLIGHTS = [
   "Banho com produtos adequados para cada pelagem",
@@ -13,7 +15,17 @@ const HIGHLIGHTS = [
 
 export function BathTosa() {
   return (
-    <section id="banho-e-tosa" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="banho-e-tosa" className="relative isolate scroll-mt-24 overflow-hidden py-20 sm:py-28">
+      <div aria-hidden="true" className="absolute inset-0 -z-10">
+        <img
+          src={bathTosaBackground}
+          alt=""
+          loading="lazy"
+          className="size-full object-cover object-[58%_48%] sm:object-[62%_50%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/35" />
+      </div>
+
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <p className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-primary uppercase">
