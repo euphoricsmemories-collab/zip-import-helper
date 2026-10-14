@@ -22,6 +22,7 @@ import ultrassom from "@/assets/ultrassonografia.jpg.asset.json";
 import cirurgias from "@/assets/cirurgias.jpg.asset.json";
 import vacinas from "@/assets/vacinas-importadas.png.asset.json";
 import fachada from "@/assets/petclin-fachada.png.asset.json";
+import tartarectomia from "@/assets/tartarectomia.png.asset.json";
 
 interface Service {
   icon: LucideIcon;
@@ -82,6 +83,7 @@ const SERVICES: Service[] = [
     icon: Sparkles,
     name: "Tartarectomia",
     description: "Remoção de tártaro para a saúde bucal e o conforto do seu pet.",
+    image: tartarectomia.url,
   },
 ];
 
