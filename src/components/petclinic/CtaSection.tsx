@@ -1,7 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { WHATSAPP_DEFAULT_URL } from "@/lib/petclinic";
-import { LocationCard } from "@/components/petclinic/LocationCard";
 
 export function CtaSection() {
   return (
