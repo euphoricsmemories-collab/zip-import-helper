@@ -49,7 +49,6 @@ function Index() {
         <CtaSection />
       </main>
       <Footer />
-      <WhatsAppFab />
     </div>
   );
 }

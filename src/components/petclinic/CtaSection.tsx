@@ -43,10 +43,6 @@ export function CtaSection() {
             <MessageCircle className="size-5" aria-hidden="true" />
             Agendar pelo WhatsApp
           </a>
-
-          <div className="mt-10">
-            <LocationCard />
-          </div>
         </Reveal>
       </div>
     </section>
