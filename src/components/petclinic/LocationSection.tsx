@@ -1,9 +1,10 @@
 import { MapPin } from "lucide-react";
 import facade from "@/assets/petclin-fachada.png.asset.json";
-import { ADDRESS, ADDRESS_CITY } from "@/lib/petclinic";
+import { ADDRESS_CITY } from "@/lib/petclinic";
 import { Reveal } from "@/components/petclinic/Reveal";
 
-const locationQuery = `PetClin Clínica Veterinária, ${ADDRESS}, ${ADDRESS_CITY}, Brasil`;
+// Do not constrain Google's business search to the disputed street number.
+const locationQuery = "PetClin Clínica Veterinária, Penedo, Alagoas, Brasil";
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationQuery)}`;
 
 export function LocationSection() {
@@ -49,7 +50,7 @@ export function LocationSection() {
           <div className="mt-5 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <p className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground">
               <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-              <span>{ADDRESS}<br />{ADDRESS_CITY}</span>
+              <span>{ADDRESS_CITY}</span>
             </p>
             <a href={mapsUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline">
               <MapPin className="size-4" aria-hidden="true" />

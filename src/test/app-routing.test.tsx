@@ -7,7 +7,7 @@ import { routeTree } from "@/routeTree.gen";
 
 function renderAt(path: string) {
   // The document shell belongs to the browser document, not RTL's div container.
-  routeTree.update({ shellComponent: ({ children }) => <>{children}</> });
+  routeTree.options.shellComponent = ({ children }) => <>{children}</>;
   const queryClient = new QueryClient();
   const router = createRouter({
     routeTree,
