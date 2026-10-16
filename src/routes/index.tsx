@@ -10,6 +10,7 @@ import { Hero } from "@/components/petclinic/Hero";
 import { Services } from "@/components/petclinic/Services";
 import { PatientsGallery } from "@/components/petclinic/PatientsGallery";
 import { Universe } from "@/components/petclinic/Universe";
+import { LocationSection } from "@/components/petclinic/LocationSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,6 +48,7 @@ function Index() {
         <BathTosa />
         <Diagnostics />
         <CtaSection />
+        <LocationSection />
       </main>
       <Footer />
     </div>
