@@ -2,15 +2,12 @@ import { MapPin } from "lucide-react";
 import facade from "@/assets/petclin-fachada.png.asset.json";
 import { ADDRESS_CITY } from "@/lib/petclinic";
 import { Reveal } from "@/components/petclinic/Reveal";
-
-// Do not constrain Google's business search to the disputed street number.
-const locationQuery = "PetClin Clínica Veterinária, Penedo, Alagoas, Brasil";
-const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(locationQuery)}`;
+import { petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
 
 export function LocationSection() {
   const browserKey = import.meta.env["VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY"];
   const embedUrl = browserKey
-    ? `https://www.google.com/maps/embed/v1/place?${new URLSearchParams({ key: browserKey, q: locationQuery, zoom: "17", language: "pt-BR", region: "BR" })}`
+    ? petclinEmbedUrl(browserKey)
     : undefined;
 
   return (
@@ -52,7 +49,7 @@ export function LocationSection() {
               <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
               <span>{ADDRESS_CITY}</span>
             </p>
-            <a href={mapsUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline">
+            <a href={PETCLIN_MAP_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline">
               <MapPin className="size-4" aria-hidden="true" />
               Abrir no Google Maps
             </a>

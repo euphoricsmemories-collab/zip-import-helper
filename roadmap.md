@@ -7,4 +7,5 @@
 - [x] Remover o cartão “Chegue até nós!” (mapa, endereço, horários) e o botão flutuante do WhatsApp.
 - [ ] Substituir as descrições provisórias da galeria de pacientes pelos textos reais (aguardando o usuário).
 - [x] Adicionar “Onde estamos” abaixo do agendamento, com incorporação oficial do Google Maps e foto da fachada sem bloquear interação.
-- [ ] Confirmar endereço e marcador da PetClin: site nº 1241; referências públicas nº 1183 ou Avenida Marituba, 43 (aguardando confirmação ou link do Google Maps). Interação do mapa depende de validação em domínio autorizado.
+- [x] Usar o ponto exato do link enviado pelo usuário: -10.285294, -36.555820; não mostrar rua/número divergentes na nova seção.
+- [ ] Validar interação do Google Maps em domínio autorizado (não disponível no ambiente de verificação).
