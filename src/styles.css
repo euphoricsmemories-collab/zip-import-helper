@@ -116,6 +116,50 @@
   );
 }
 
+/*
+ * Seção "Onde estamos" — luz difusa + degradê menta/aqua.
+ * As formas orgânicas (manchas e arcos) ficam nos cantos, sempre atrás
+ * do mapa, para dar profundidade sem competir com o conteúdo.
+ */
+.location-background {
+  background:
+    radial-gradient(ellipse 55% 40% at 50% -10%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 68%),
+    radial-gradient(ellipse 40% 30% at 50% 55%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 72%),
+    linear-gradient(155deg, #f3fbf9 0%, #e9f7f4 30%, #e2f4f6 64%, #eaf6fb 100%);
+}
+
+.location-blob {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+}
+
+.location-blob-sky {
+  background: radial-gradient(closest-side, rgba(94, 188, 207, 0.28) 0%, rgba(94, 188, 207, 0) 72%);
+}
+
+.location-blob-mint {
+  background: radial-gradient(closest-side, rgba(7, 140, 137, 0.16) 0%, rgba(7, 140, 137, 0) 72%);
+}
+
+.location-blob-glow {
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.location-lines {
+  fill: none;
+  stroke: color-mix(in oklab, var(--color-primary) 14%, transparent);
+  stroke-width: 1.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .location-blob-drift {
+    animation: hero-card-float 14s ease-in-out infinite;
+    will-change: transform;
+  }
+}
+
+
 
 @keyframes hero-heart-float {
   0%,

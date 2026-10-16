@@ -11,7 +11,22 @@ export function LocationSection() {
     : undefined;
 
   return (
-    <section id="localizacao" className="bg-background py-14 sm:py-20" aria-labelledby="location-heading">
+    <section id="localizacao" className="relative isolate overflow-hidden bg-background py-14 sm:py-20" aria-labelledby="location-heading">
+      <div aria-hidden="true" className="location-background pointer-events-none absolute inset-0 -z-10">
+        <span className="location-blob location-blob-sky location-blob-drift -top-28 -right-24 h-[22rem] w-[22rem] sm:-top-32 sm:-right-28 sm:h-[32rem] sm:w-[32rem]" />
+        <span className="location-blob location-blob-mint location-blob-drift -bottom-32 -left-28 h-[24rem] w-[24rem] [animation-delay:-6s] sm:-bottom-36 sm:-left-32 sm:h-[34rem] sm:w-[34rem]" />
+        <span className="location-blob location-blob-glow -top-16 left-1/2 h-[16rem] w-[28rem] -translate-x-1/2 sm:-top-24 sm:h-[20rem] sm:w-[40rem]" />
+        <svg viewBox="0 0 200 200" className="location-lines absolute -top-6 -left-6 h-36 w-36 sm:-top-8 sm:-left-8 sm:h-56 sm:w-56">
+          <circle cx="0" cy="0" r="72" />
+          <circle cx="0" cy="0" r="112" />
+          <circle cx="0" cy="0" r="152" />
+        </svg>
+        <svg viewBox="0 0 200 200" className="location-lines absolute -right-6 -bottom-6 h-36 w-36 sm:-right-8 sm:-bottom-8 sm:h-56 sm:w-56">
+          <circle cx="200" cy="200" r="72" />
+          <circle cx="200" cy="200" r="112" />
+          <circle cx="200" cy="200" r="152" />
+        </svg>
+      </div>
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <div className="mb-8 text-center sm:mb-10">
