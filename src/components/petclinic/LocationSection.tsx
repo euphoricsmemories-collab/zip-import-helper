@@ -15,7 +15,7 @@ export function LocationSection() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <div className="mb-8 text-center sm:mb-10">
-            <h2 id="location-heading" className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
+            <h2 id="location-heading" className="font-display text-3xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
               Onde estamos
             </h2>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">
