@@ -6,3 +6,4 @@
 - [x] Aplicar à seção "A PetClin" o degradê #D9F2F1 apenas na metade superior, branco sólido da metade para baixo.
 - [x] Remover o cartão “Chegue até nós!” (mapa, endereço, horários) e o botão flutuante do WhatsApp.
 - [ ] Substituir as descrições provisórias da galeria de pacientes pelos textos reais (aguardando o usuário).
+- [ ] Adicionar “Onde estamos” abaixo do agendamento, com Google Maps interativo e foto da fachada; confirmar a localização sem inventar dados.
