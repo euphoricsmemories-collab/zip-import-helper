@@ -18,7 +18,7 @@ export function LocationSection() {
             <h2 id="location-heading" className="font-display text-3xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
               Onde estamos
             </h2>
-            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+            <p className="mt-3 font-outfit text-base leading-relaxed text-muted-foreground">
               Venha nos visitar — estamos prontos para cuidar do seu pet
             </p>
           </div>
