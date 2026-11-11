@@ -74,6 +74,29 @@
   }
 }
 
+.petshop-section {
+  --petshop-wash: color-mix(in oklab, var(--teal-soft) 58%, var(--background));
+  --petshop-photo-shadow: 0 12px 28px -12px color-mix(in oklab, var(--deep) 24%, transparent);
+  background: linear-gradient(110deg, var(--background) 0%, var(--background) 36%, var(--petshop-wash) 100%);
+}
+
+.petshop-composition { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1.02; }
+.petshop-photo { position: absolute; box-shadow: var(--petshop-photo-shadow); border-radius: 8px; }
+.petshop-photo-main { top: 0; right: 0; width: 88%; height: 70%; z-index: 1; }
+.petshop-photo-products { left: 0; bottom: 0; width: 42%; height: 36%; z-index: 2; }
+.petshop-photo-accessories { right: 0; bottom: 0; width: 51%; height: 24%; z-index: 2; }
+.petshop-photo-placeholder { background: var(--petshop-wash); border: 1px dashed var(--border); border-radius: 8px; }
+.petshop-outline { position: absolute; top: 6%; left: 4%; width: 84%; height: 68%; border: 1px solid var(--border); border-radius: 8px; pointer-events: none; }
+@media (min-width: 640px) {
+  .petshop-composition { aspect-ratio: 1.12; }
+  .petshop-photo-main { width: 83%; height: 77%; }
+  .petshop-photo-products { bottom: 3%; width: 38%; height: 39%; }
+  .petshop-photo-accessories { right: 6%; width: 37%; height: 28%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .petshop-section img, .petshop-section a { transition: none; }
+}
+
 .hero-background {
   background:
     radial-gradient(ellipse 46% 40% at 88% 0%, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
