@@ -1,47 +1,46 @@
-import type { LucideIcon } from "lucide-react";
-import { Microscope, ShieldCheck, ShoppingBag, Sparkles, Stethoscope } from "lucide-react";
 import { Reveal } from "@/components/petclinic/Reveal";
-import { cn } from "@/lib/utils";
+import atendimento from "@/assets/diferencial-atendimento.avif.asset.json";
+import prevencao from "@/assets/diferencial-prevencao.avif.asset.json";
+import diagnostico from "@/assets/diferencial-diagnostico.avif.asset.json";
+import banho from "@/assets/diferencial-banho.avif.asset.json";
+import produtos from "@/assets/diferencial-produtos.png.asset.json";
 
 interface Pillar {
-  icon: LucideIcon;
+  image: string;
   title: string;
   description: string;
-  wide?: boolean;
 }
 
 const PILLARS: Pillar[] = [
   {
-    icon: Stethoscope,
+    image: atendimento.url,
     title: "Atendimento veterinário",
     description:
       "Cuidado próximo e atento, do acolhimento na chegada ao acompanhamento depois da consulta.",
   },
   {
-    icon: ShieldCheck,
+    image: prevencao.url,
     title: "Prevenção e saúde",
     description:
       "Vacinas e orientações para proteger o dia a dia do seu pet em cada fase da vida.",
   },
   {
-    icon: Microscope,
+    image: diagnostico.url,
     title: "Serviços de diagnóstico",
     description:
       "Exames laboratoriais e ultrassonografia para apoiar o veterinário nas decisões clínicas.",
   },
   {
-    icon: Sparkles,
+    image: banho.url,
     title: "Cuidados estéticos",
     description:
       "Banho e tosa realizados com calma, técnica e afeto — bem-estar que se vê e se sente.",
-    wide: true,
   },
   {
-    icon: ShoppingBag,
+    image: produtos.url,
     title: "Produtos e soluções para pets",
     description:
       "Pet shop com itens de alimentação, higiene e bem-estar, selecionados com cuidado.",
-    wide: true,
   },
 ];
 
@@ -63,23 +62,25 @@ export function Differentials() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {PILLARS.map((pillar, index) => (
             <Reveal
               key={pillar.title}
               delay={Math.min(index * 70, 280)}
-              className={cn(pillar.wide ? "lg:col-span-3" : "lg:col-span-2")}
+              className="min-w-0 h-full"
             >
-              <article className="group h-full rounded-3xl border border-border bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10">
-                <span className="flex size-12 items-center justify-center rounded-2xl bg-teal-soft text-primary transition-transform duration-300 group-hover:scale-110">
-                  <pillar.icon className="size-5.5" aria-hidden="true" />
-                </span>
-                <h3 className="mt-5 font-display text-lg font-semibold tracking-tight text-foreground">
+              <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 motion-reduce:transform-none motion-reduce:transition-none">
+                <div className="aspect-[4/3] w-full shrink-0 overflow-hidden">
+                  <img src={pillar.image} alt={pillar.title} loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transform-none motion-reduce:transition-none" />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                <h3 className="font-display text-lg font-semibold text-foreground">
                   {pillar.title}
                 </h3>
                 <p className="mt-2.5 text-[0.95rem] leading-relaxed text-muted-foreground">
                   {pillar.description}
                 </p>
+                </div>
               </article>
             </Reveal>
           ))}
