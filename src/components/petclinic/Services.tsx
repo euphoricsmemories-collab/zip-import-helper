@@ -1,6 +1,5 @@
 import type { LucideIcon } from "lucide-react";
 import {
-  ArrowRight,
   Cross,
   FlaskConical,
   Heart,
@@ -13,7 +12,6 @@ import {
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/petclinic/Reveal";
-import { whatsappUrl } from "@/lib/petclinic";
 import { cn } from "@/lib/utils";
 import petshop from "@/assets/petshop.jpg.asset.json";
 import banhoTosa from "@/assets/banho-e-tosa-card.jpg.asset.json";
@@ -188,29 +186,29 @@ export function Services() {
                     "group relative isolate flex h-full flex-col overflow-hidden justify-between gap-6 rounded-3xl border p-7 transition-[background-color,border-color,box-shadow,transform,color] duration-[550ms] ease-out motion-reduce:transition-none",
                     active
                       ? "-translate-y-1 border-primary bg-primary text-primary-foreground shadow-xl shadow-primary/25"
-                      : "border-border bg-white shadow-none hover:border-primary/40",
+                      : "border-border bg-card shadow-none hover:border-primary/40",
                     photo && "min-h-80 border-primary/40",
                   )}
                 >
                   {photo && (
                     <div aria-hidden="true" className="absolute inset-0 -z-10">
                       <img src={photo} alt="" loading="lazy" className="size-full object-cover object-[50%_42%] transition-transform duration-700 group-hover:scale-[1.03]" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/45 to-transparent sm:bg-gradient-to-r sm:from-deep/90 sm:via-deep/50 sm:to-transparent" />
+                      <div className="service-photo-overlay absolute inset-0" />
                     </div>
                   )}
-                  <div className={cn(photo && "max-w-md")}>
-                    <span
+                  <span
                       className={cn(
                         "flex size-13 items-center justify-center rounded-2xl transition-colors duration-[550ms]",
-                        active ? "bg-white/15 text-white" : "bg-teal-soft text-primary",
+                        active ? "bg-deep/55 text-deep-foreground" : "bg-teal-soft text-primary",
                       )}
                     >
                       <service.icon className="size-6" aria-hidden="true" />
-                    </span>
+                  </span>
+                  <div className={cn("mt-auto", photo && "max-w-md")}>
                     <h3
                       className={cn(
-                        "mt-5 font-display text-xl font-semibold tracking-tight transition-colors duration-[550ms]",
-                        active ? "text-white" : "text-foreground",
+                        "font-display text-xl font-semibold tracking-tight transition-colors duration-[550ms]",
+                        active ? "text-deep-foreground" : "text-foreground",
                       )}
                     >
                       {service.name}
@@ -218,28 +216,12 @@ export function Services() {
                     <p
                       className={cn(
                         "mt-2.5 text-[0.95rem] leading-relaxed transition-colors duration-[550ms]",
-                        active ? "text-white/85" : "text-muted-foreground",
+                        active ? "text-deep-foreground/90" : "text-muted-foreground",
                       )}
                     >
                       {service.description}
                     </p>
                   </div>
-
-                  <a
-                    href={whatsappUrl(`Olá! Gostaria de saber mais sobre ${service.name} da PetClin.`)}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={cn(
-                      "inline-flex items-center gap-2 text-sm font-semibold transition-colors duration-[550ms]",
-                      active ? "text-white hover:text-white/80" : "text-primary hover:text-primary/75",
-                    )}
-                  >
-                    Saiba mais
-                    <ArrowRight
-                      className="size-4 transition-transform duration-300 group-hover:translate-x-1"
-                      aria-hidden="true"
-                    />
-                  </a>
                 </article>
               </Reveal>
             );
