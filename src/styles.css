@@ -120,6 +120,54 @@
   );
 }
 
+.about-coverflow {
+  --photo-width: 56%;
+  --photo-offset: 40%;
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  margin-inline: auto;
+  aspect-ratio: 1.28;
+  perspective: 1200px;
+  touch-action: pan-y;
+  user-select: none;
+  isolation: isolate;
+}
+
+.about-coverflow-photo {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  width: var(--photo-width);
+  height: auto;
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: var(--about-photo-shadow);
+  cursor: grab;
+  transform: translateX(-50%);
+  transition: transform 800ms cubic-bezier(0.45, 0, 0.2, 1), opacity 800ms ease, box-shadow 800ms ease;
+  will-change: transform;
+}
+
+.about-coverflow-photo:active { cursor: grabbing; }
+.about-coverflow-photo:hover { background: var(--card); }
+.about-coverflow-photo img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.about-coverflow-photo[data-position="center"] { z-index: 3; transform: translateX(-50%) translateZ(40px); }
+.about-coverflow-photo[data-position="left"] { z-index: 1; transform: translateX(calc(-50% - var(--photo-offset))) rotateY(16deg) scale(0.8); }
+.about-coverflow-photo[data-position="right"] { z-index: 2; transform: translateX(calc(-50% + var(--photo-offset))) rotateY(-16deg) scale(0.8); }
+.about-coverflow-photo[data-position="hidden"] { z-index: 0; opacity: 0; pointer-events: none; transform: translateX(-50%) translateZ(-150px) scale(0.7); }
+
+@media (min-width: 640px) {
+  .about-coverflow { --photo-width: 43%; --photo-offset: 65%; aspect-ratio: 1.7; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-coverflow-photo { transition: none; }
+}
+
 /*
  * Seção "Onde estamos" — luz difusa + degradê menta/aqua.
  * As formas orgânicas (manchas e arcos) ficam nos cantos, sempre atrás
@@ -229,6 +277,7 @@
   --navy-foreground: oklch(1 0 0);
   --teal-soft: oklch(0.955 0.03 186);
   --services-sky: #5ebccf;
+  --about-photo-shadow: 0 14px 34px color-mix(in oklab, var(--navy) 16%, transparent);
   --service-photo-gradient: linear-gradient(
     to top,
     color-mix(in oklab, var(--foreground) 65%, var(--deep)) 0%,

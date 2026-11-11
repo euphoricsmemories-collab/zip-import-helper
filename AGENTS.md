@@ -11,3 +11,4 @@
 
 - Keep the location section separate from the appointment CTA and use Google's official Maps Embed API with existing clinic data; this preserves editable content and avoids invented geographic coordinates.
 - Facade overlays on the location map must ignore pointer events so dragging and zooming remain accessible.
+- Keep the About photo carousel in its own browser-safe component with timing and cyclic position rules in a shared module; this isolates interaction from institutional content and makes rotation rules testable.

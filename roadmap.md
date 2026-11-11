@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Substituir a composição visual de Sobre a PetClin por carrossel Coverflow com as três fotos enviadas, abaixo do parágrafo, com rotação a cada 4 segundos e interação manual.
+
 - [x] Refinar os oito cards de serviços: retirar “Saiba mais”, alinhar textos na base esquerda e valorizar as fotos próprias com degradê petróleo inferior, preservando dimensões e animações.
 
 - [x] Refinar somente o background da hero com gradientes suaves e corações flutuantes.
