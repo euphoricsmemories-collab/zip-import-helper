@@ -1,13 +1,7 @@
-import { Check, HeartHandshake, MapPin } from "lucide-react";
+import { HeartHandshake, MapPin } from "lucide-react";
 import vetCare from "@/assets/doutor-exame.jpg.asset.json";
 const vetCareUrl = vetCare.url;
 import { Reveal } from "@/components/petclinic/Reveal";
-
-const TRUST_ITEMS = [
-  "Atendimento acolhedor, do primeiro contato ao acompanhamento",
-  "Estrutura pensada para o conforto e a segurança dos pets",
-  "Cuidado completo: clínica, estética e diagnóstico",
-];
 
 export function About() {
   return (
@@ -54,33 +48,17 @@ export function About() {
         <Reveal delay={120} className="order-1 lg:order-2">
           <p className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-primary uppercase">
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
-            A PetClin
+            Sobre a PetClin
           </p>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
             Mais que cuidados, uma relação de confiança.
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-            A PetClin reúne, em um só lugar, serviços de saúde, diagnóstico, prevenção e estética
-            para cães e gatos — com a estrutura e a atenção de uma clínica pensada para o
-            bem-estar animal.
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-pretty text-muted-foreground sm:mt-6 sm:text-lg">
+            Há mais de 10 anos em Penedo, a PetClin constrói sua trajetória com profissionalismo,
+            dedicação e compromisso com a saúde e o bem-estar dos animais. Ao longo dessa caminhada,
+            tornou-se referência na região, oferecendo atendimento veterinário responsável e
+            acolhedor, com o propósito de cuidar de quem faz parte da sua família.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Sabemos que cada pet é parte da família. Por isso, unimos profissionalismo e
-            proximidade em cada atendimento, para que tutores se sintam seguros e pets se sintam
-            em casa.
-          </p>
-
-          <ul className="mt-8 space-y-4">
-            {TRUST_ITEMS.map((item) => (
-              <li key={item} className="flex items-start gap-3">
-                <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-teal-soft text-primary">
-                  <Check className="size-3.5" aria-hidden="true" />
-                </span>
-                <span className="leading-relaxed text-foreground/85">{item}</span>
-              </li>
-            ))}
-          </ul>
-
         </Reveal>
       </div>
     </section>
