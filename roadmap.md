@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Reformular exclusivamente os cinco cartões de Diferenciais com fotos na ordem enviada, textos preservados e grade de até quatro colunas.
+
 - [x] Substituir a composição visual de Sobre a PetClin por carrossel Coverflow com as três fotos enviadas, abaixo do parágrafo, com rotação a cada 4 segundos e interação manual.
 
 - [x] Refinar os oito cards de serviços: retirar “Saiba mais”, alinhar textos na base esquerda e valorizar as fotos próprias com degradê petróleo inferior, preservando dimensões e animações.
