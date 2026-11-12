@@ -55,11 +55,6 @@ export function Diagnostics() {
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
             Mais precisão para cuidar da saúde do seu pet.
           </h2>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Com exames laboratoriais e ultrassonografia na própria clínica, o veterinário tem mais
-            informações para acompanhar a saúde do seu pet com clareza e segurança.
-          </p>
-
           <div className="mt-9 grid gap-4 sm:grid-cols-2">
             {DIAGNOSTIC_SERVICES.map((service) => (
               <article
