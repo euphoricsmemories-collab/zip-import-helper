@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Melhorar apenas a área abaixo do mapa: botão “Como chegar” em destaque e horários confirmados junto ao endereço, sem alterar mapa, fundo ou textos existentes.
+- [x] Melhorar apenas a área abaixo do mapa: botão “Como chegar” em destaque e horários confirmados junto ao endereço, sem alterar mapa, fundo ou textos existentes.
 
 - [x] Reformular exclusivamente o Pet Shop com apresentação editorial, composição assimétrica, foto existente e dois espaços reservados; botão reutiliza WhatsApp da clínica.
 
