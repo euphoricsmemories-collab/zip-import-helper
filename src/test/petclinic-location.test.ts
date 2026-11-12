@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
+import { LOCATION_HOURS, petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
 
 describe("Owner-provided clinic location", () => {
   it("targets the exact point resolved from the owner's Google Maps link", () => {

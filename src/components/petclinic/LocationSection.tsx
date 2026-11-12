@@ -1,8 +1,8 @@
-import { MapPin } from "lucide-react";
+import { Clock3, MapPin, Navigation } from "lucide-react";
 import facade from "@/assets/petclin-fachada.png.asset.json";
 import { ADDRESS_CITY } from "@/lib/petclinic";
 import { Reveal } from "@/components/petclinic/Reveal";
-import { petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
+import { LOCATION_HOURS, petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
 
 export function LocationSection() {
   const browserKey = import.meta.env["VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY"];
