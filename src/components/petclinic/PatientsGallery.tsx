@@ -61,7 +61,7 @@ export function PatientsGallery() {
   const items = [...PATIENTS, ...PATIENTS];
 
   return (
-    <section id="galeria" className="scroll-mt-24 overflow-hidden bg-deep py-20 sm:py-28">
+    <section id="galeria" className="patients-background scroll-mt-24 overflow-hidden py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 text-center sm:px-8">
         <p className="inline-flex items-center gap-2 text-sm font-medium text-deep-foreground/90">
           <span aria-hidden="true" className="size-1.5 rounded-full bg-deep-foreground" />

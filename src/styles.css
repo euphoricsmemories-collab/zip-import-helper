@@ -74,6 +74,14 @@
   }
 }
 
+.patients-background {
+  --deep-foreground: var(--deep);
+  background-image: url("/__l5e/assets-v1/5ebd7279-d3ed-4662-a1fd-7d67a4b1fb88/pacientes-fundo-aqua.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .petshop-section {
   --petshop-wash: color-mix(in oklab, var(--teal-soft) 58%, var(--background));
   --petshop-photo-shadow: 0 12px 28px -12px color-mix(in oklab, var(--deep) 24%, transparent);
