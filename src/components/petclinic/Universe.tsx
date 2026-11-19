@@ -1,12 +1,12 @@
 import { ArrowUpRight, Bone, ShoppingBag, Utensils, ImageIcon } from "lucide-react";
-import petShopAsset from "@/assets/petshop.jpg.asset.json";
+const petShopAsset = "/images/products/petshop.jpg";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { Button } from "@/components/ui/button";
 import { whatsappUrl } from "@/lib/petclinic";
 
 const PHOTOS: { src: string | null; alt: string; label: string; position: string }[] = [
   {
-    src: petShopAsset.url,
+    src: petShopAsset,
     alt: "Loja do pet shop da PetClin com o logotipo aceso, rações, petiscos e acessórios nas prateleiras",
     label: "PetClin · Pet Shop",
     position: "main",

@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { FlaskConical, ScanHeart } from "lucide-react";
-import diagnostics from "@/assets/diagnostics.jpg";
+const diagnostics = "/images/services/diagnostics.jpg";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 

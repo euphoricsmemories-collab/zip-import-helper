@@ -22,3 +22,11 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Portable images
+
+All site images are real, version-controlled files under `public/images/` and use same-origin `/images/...` paths. Include the entire `public` folder in source ZIPs and repository synchronization. Vite copies public assets into its client output without transforming the originals; deploy that output with the framework's required server runtime, not just the source folder.
+
+`public/images/manifest.json` records each original's destination, dimensions (where available), byte count, SHA-256 checksum and usages. Historical `.asset.json` files remain only for provenance; the app does not import them or request their CDN URLs. Do not delete the historical CDN objects because older published versions may still use them.
+
+Run `bunx vitest run src/test/image-storage.test.ts` to verify files and references. After adding or replacing an image, update the manifest and the audited inventory count in that test. The audit and deployment limitations are recorded in `IMAGE_AUDIT.md`.

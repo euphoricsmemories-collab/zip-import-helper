@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import fachada from "@/assets/sobre-fachada.png.asset.json";
-import equipe from "@/assets/sobre-equipe.png.asset.json";
-import atendimento from "@/assets/sobre-atendimento.png.asset.json";
+const fachada = "/images/gallery/sobre-fachada.png";
+const equipe = "/images/gallery/sobre-equipe.png";
+const atendimento = "/images/gallery/sobre-atendimento.png";
 import { CAROUSEL_INTERVAL, CAROUSEL_RESUME_DELAY, carouselPosition } from "@/lib/about-carousel";
 
 const PHOTOS = [
-  { src: fachada.url, alt: "Fachada da clínica PetClin" },
-  { src: equipe.url, alt: "Equipe veterinária com dois cães" },
-  { src: atendimento.url, alt: "Veterinário examinando uma gata" },
+  { src: fachada, alt: "Fachada da clínica PetClin" },
+  { src: equipe, alt: "Equipe veterinária com dois cães" },
+  { src: atendimento, alt: "Veterinário examinando uma gata" },
 ];
 
 export function AboutCarousel() {

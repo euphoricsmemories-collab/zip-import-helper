@@ -1,0 +1,456 @@
+[
+  {
+    "source": "src/assets/banho-e-tosa-background.png.asset.json",
+    "path": "/images/backgrounds/banho-e-tosa-background.png",
+    "bytes": 2689889,
+    "sha256": "5028eaba11165be4c7535c092095522b63c807333409e3d17f7a310ef03fbba1",
+    "dimensions": [
+      941,
+      1672
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/BathTosa.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/a64dc9f0-9bf3-4dff-8c6f-828a3fb2dc1e/banho-e-tosa-background.png"
+  },
+  {
+    "source": "src/assets/banho-e-tosa-card.jpg.asset.json",
+    "path": "/images/services/banho-e-tosa-card.jpg",
+    "bytes": 80086,
+    "sha256": "04e9020dd190e5c183114d3bfbc6e03543fed17f0e26be303162ca9d62b97c6f",
+    "dimensions": [
+      736,
+      981
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/8baa8321-4154-40e2-a70e-7e84a425b576/banho-e-tosa-card.jpg"
+  },
+  {
+    "source": "src/assets/banho-e-tosa-final.png.asset.json",
+    "path": "/images/services/banho-e-tosa-final.png",
+    "bytes": 1871328,
+    "sha256": "b2cc57ef6b48dd1412abbbde7cc36afc742059e9d27e9a66efbf53b933cf416f",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/BathTosa.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/43e5c42b-747c-4468-b295-5d2ce9cb5d3b/banho-e-tosa-final.png"
+  },
+  {
+    "source": "src/assets/cirurgias.jpg.asset.json",
+    "path": "/images/services/cirurgias.jpg",
+    "bytes": 41951,
+    "sha256": "c1a881be11c4b3c50c853cbb175dd91eca96d6f02bddc925157716a559505fbd",
+    "dimensions": [
+      684,
+      448
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/722e6213-137f-44ef-80ca-a7f8eafe336c/cirurgias.jpg"
+  },
+  {
+    "source": "src/assets/diagnostics.jpg",
+    "path": "/images/services/diagnostics.jpg",
+    "bytes": 121882,
+    "sha256": "d84dc8f5a0f3f318b421eec915f416f793556a92669131a1d0076fbfeae3d1c8",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/Diagnostics.tsx"
+    ],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/diferencial-atendimento.avif.asset.json",
+    "path": "/images/services/diferencial-atendimento.avif",
+    "bytes": 15380,
+    "sha256": "b60bc5c892263d2308b997896402079e06f7d8d372a8469619b05902a1b880e2",
+    "dimensions": [
+      480,
+      360
+    ],
+    "format": "AVIF",
+    "usedBy": [
+      "src/components/petclinic/Differentials.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/2be78a48-9978-4dbb-b969-b8b14cc5324b/diferencial-atendimento.avif"
+  },
+  {
+    "source": "src/assets/diferencial-banho.avif.asset.json",
+    "path": "/images/services/diferencial-banho.avif",
+    "bytes": 13316,
+    "sha256": "341f71751e56b5f6d6a3598c06c67562819277d3a8b804152e61f69b9dae8885",
+    "dimensions": [
+      480,
+      360
+    ],
+    "format": "AVIF",
+    "usedBy": [
+      "src/components/petclinic/Differentials.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/1260d1a6-7495-4617-8369-2073385d74be/diferencial-banho.avif"
+  },
+  {
+    "source": "src/assets/diferencial-diagnostico.avif.asset.json",
+    "path": "/images/services/diferencial-diagnostico.avif",
+    "bytes": 15221,
+    "sha256": "d566f7dbb3e9379d6d15fcc70380502c71c09b20668aee323dc09eb1c5f6fbda",
+    "dimensions": [
+      480,
+      360
+    ],
+    "format": "AVIF",
+    "usedBy": [
+      "src/components/petclinic/Differentials.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/e1f8eca1-6493-4a63-bead-415d12008ca8/diferencial-diagnostico.avif"
+  },
+  {
+    "source": "src/assets/diferencial-prevencao.avif.asset.json",
+    "path": "/images/services/diferencial-prevencao.avif",
+    "bytes": 11733,
+    "sha256": "fd8615dcf5957a9925deb25f25e9348dcb840274160169b12395ef3092794667",
+    "dimensions": [
+      480,
+      360
+    ],
+    "format": "AVIF",
+    "usedBy": [
+      "src/components/petclinic/Differentials.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/7300c78d-f4da-4b0c-94b4-1cde12467271/diferencial-prevencao.avif"
+  },
+  {
+    "source": "src/assets/diferencial-produtos.png.asset.json",
+    "path": "/images/products/diferencial-produtos.png",
+    "bytes": 2274121,
+    "sha256": "c46ff63656982f588214987b8562d603e557c10a96f7d2215f7ffa33fab161e1",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/Differentials.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/92080dea-a3a1-4e73-8be4-c0cb4b8685ab/diferencial-produtos.png"
+  },
+  {
+    "source": "src/assets/doutor-exame.jpg.asset.json",
+    "path": "/images/services/doutor-exame.jpg",
+    "bytes": 2028026,
+    "sha256": "baa8cb54f160099fd2954f98f0b94dfb57e125a2cc80341ed5ae5d8461bd47c0",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "usedBy": [],
+    "previousUrl": "/__l5e/assets-v1/4ee5d9d0-867c-45da-ae7c-bbbe9ef261bb/doutor-exame.jpg"
+  },
+  {
+    "source": "src/assets/doutor-hero.png.asset.json",
+    "path": "/images/banners/doutor-hero.png",
+    "bytes": 2287523,
+    "sha256": "9a6d10bd1253fde238426ece377c23ce66cb55b0c4cfab32ab12cabb444c434b",
+    "dimensions": [
+      1059,
+      1486
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/Hero.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/3950572c-897a-4bc1-ac53-2267c22d6183/doutor-hero.png"
+  },
+  {
+    "source": "src/assets/exames-laboratoriais.jpg.asset.json",
+    "path": "/images/services/exames-laboratoriais.jpg",
+    "bytes": 314880,
+    "sha256": "2277dfcac1fe4ef8799e4232e67f8876bb7b8f00153fa6be17afbbdba4feb284",
+    "dimensions": [
+      1072,
+      1920
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/77ab2433-3e90-431d-bac8-c1a6bc4c98b7/exames-laboratoriais.jpg"
+  },
+  {
+    "source": "src/assets/gallery-cat.jpg",
+    "path": "/images/gallery/gallery-cat.jpg",
+    "bytes": 72332,
+    "sha256": "74c2654f02c879bee74106ae972c26dfb01bee20e72753011b04007294330bb3",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/PatientsGallery.tsx"
+    ],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/gallery-dog.jpg",
+    "path": "/images/gallery/gallery-dog.jpg",
+    "bytes": 131945,
+    "sha256": "2ffb66d894ed27303e826ccb95d322e7e902dc081fb3f0f72f3db1d59cbc35f1",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "JPEG",
+    "usedBy": [],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/gallery-exam.jpg",
+    "path": "/images/gallery/gallery-exam.jpg",
+    "bytes": 108633,
+    "sha256": "e0b83c5298e9f99dadca07efa5454231ea602d3095c38fb6bee367f3a4d012a4",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "JPEG",
+    "usedBy": [],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/hero-dog.jpg",
+    "path": "/images/banners/hero-dog.jpg",
+    "bytes": 93809,
+    "sha256": "ef833dd170c7bc13dc74e9a86cd59c89c1b472838cef220886f294d1c2d1e22e",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "JPEG",
+    "usedBy": [],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/pacientes-fundo-aqua.png.asset.json",
+    "path": "/images/backgrounds/pacientes-fundo-aqua.png",
+    "bytes": 1406972,
+    "sha256": "2eecb4b5b7d45c0eb65173e6bdd2c32ade49cb7c0e85c044b4018faa25d17b27",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/styles.css"
+    ],
+    "previousUrl": "/__l5e/assets-v1/5ebd7279-d3ed-4662-a1fd-7d67a4b1fb88/pacientes-fundo-aqua.png"
+  },
+  {
+    "source": "src/assets/patient-1.jpg",
+    "path": "/images/gallery/patient-1.jpg",
+    "bytes": 87119,
+    "sha256": "9c48a76b0af52f11ce2deaac542cea17c33c3f520a47abc80f815fbdb666667f",
+    "dimensions": [
+      832,
+      960
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/PatientsGallery.tsx"
+    ],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/patient-2.jpg",
+    "path": "/images/gallery/patient-2.jpg",
+    "bytes": 85443,
+    "sha256": "3c287686353e4fc1d21ef274d18c47dbd84060a4f5589bb0419e61d92c11d467",
+    "dimensions": [
+      832,
+      960
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/PatientsGallery.tsx"
+    ],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/patient-3.jpg",
+    "path": "/images/gallery/patient-3.jpg",
+    "bytes": 102962,
+    "sha256": "f0c483be817b39e074246e09e4ef294c45a26a983dc0028818dacdfb76e6c1ea",
+    "dimensions": [
+      832,
+      960
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/PatientsGallery.tsx"
+    ],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/patient-4.jpg",
+    "path": "/images/gallery/patient-4.jpg",
+    "bytes": 114793,
+    "sha256": "3c18d69720cabc0251d89d6eb84cfe233e6afb6e07ea2298d19553b79f627b00",
+    "dimensions": [
+      832,
+      960
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/PatientsGallery.tsx"
+    ],
+    "previousUrl": null
+  },
+  {
+    "source": "src/assets/petclin-fachada.png.asset.json",
+    "path": "/images/services/petclin-fachada.png",
+    "bytes": 2518778,
+    "sha256": "d8da6771154fef2db7e7bf6ad5ed1d5d1a34621918e4c089181fa23cb3a316c1",
+    "dimensions": [
+      1087,
+      1447
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/LocationSection.tsx",
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/b324ae71-f577-4097-8620-2d112db63c5e/petclin-fachada.png"
+  },
+  {
+    "source": "src/assets/petshop.jpg.asset.json",
+    "path": "/images/products/petshop.jpg",
+    "bytes": 2600736,
+    "sha256": "1f70f8d7739357ac061308410320029b9ca8ff3e15e4cea814bfef03f63238b3",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx",
+      "src/components/petclinic/Universe.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/10eb083e-ab94-441c-bd74-d71983d1579b/petshop.jpg"
+  },
+  {
+    "source": "src/assets/sobre-atendimento.png.asset.json",
+    "path": "/images/gallery/sobre-atendimento.png",
+    "bytes": 2373882,
+    "sha256": "d2b89a18812c08e3461db33435ff5da32f647e8df1abbeda271511bb0bff2230",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/AboutCarousel.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/8214c253-5381-4989-b286-66b9facc0291/sobre-atendimento.png"
+  },
+  {
+    "source": "src/assets/sobre-equipe.png.asset.json",
+    "path": "/images/gallery/sobre-equipe.png",
+    "bytes": 2478952,
+    "sha256": "6aa399ea96129e393b23574a7772102e50dd59fdd806cfa83924d9d9d649ed84",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/AboutCarousel.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/28dde987-534d-415d-9e2d-817e0fbebf83/sobre-equipe.png"
+  },
+  {
+    "source": "src/assets/sobre-fachada.png.asset.json",
+    "path": "/images/gallery/sobre-fachada.png",
+    "bytes": 2631291,
+    "sha256": "99df4aade2225ec27b2149c523909ad2f68de672b7a2f5a2f86bcd27d603a11b",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/AboutCarousel.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/284fcc1e-4ab3-48d3-80a5-507c211b84a8/sobre-fachada.png"
+  },
+  {
+    "source": "src/assets/tartarectomia.png.asset.json",
+    "path": "/images/services/tartarectomia.png",
+    "bytes": 2702450,
+    "sha256": "a6c594814f6cfd46bd4e5254e1404c444201a2a03db38b401aa288784718c4e2",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/1d21bc89-3283-486c-bef2-1c461dbfdfa9/tartarectomia.png"
+  },
+  {
+    "source": "src/assets/ultrassonografia.jpg.asset.json",
+    "path": "/images/services/ultrassonografia.jpg",
+    "bytes": 103621,
+    "sha256": "7c4eea107ae0532c03d9ff22b3332830edfb73873f947d1041a873904c6897e1",
+    "dimensions": [
+      740,
+      1319
+    ],
+    "format": "JPEG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/1b47cee9-5be4-4fc7-bd7a-4c3f80fd30a5/ultrassonografia.jpg"
+  },
+  {
+    "source": "src/assets/vacinas-importadas.png.asset.json",
+    "path": "/images/services/vacinas-importadas.png",
+    "bytes": 2143262,
+    "sha256": "eb809908d7d8af7818ce7c39d01d2181385b10cf2bf38406f8b33ab47566b55e",
+    "dimensions": [
+      1362,
+      1155
+    ],
+    "format": "PNG",
+    "usedBy": [
+      "src/components/petclinic/Services.tsx"
+    ],
+    "previousUrl": "/__l5e/assets-v1/cc2225a0-263f-4064-a15e-49345510eb53/vacinas-importadas.png"
+  },
+  {
+    "source": "public/favicon.png",
+    "path": "/images/icons/favicon.png",
+    "bytes": 5454,
+    "sha256": "d5cff9308a06ab513a837bb6b03f64de1e69c3f02b4cc73eee2faa8cfbcc45a6",
+    "usedBy": [
+      "src/routes/__root.tsx"
+    ],
+    "previousUrl": null
+  }
+]

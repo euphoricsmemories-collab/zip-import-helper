@@ -13,14 +13,14 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { cn } from "@/lib/utils";
-import petshop from "@/assets/petshop.jpg.asset.json";
-import banhoTosa from "@/assets/banho-e-tosa-card.jpg.asset.json";
-import exames from "@/assets/exames-laboratoriais.jpg.asset.json";
-import ultrassom from "@/assets/ultrassonografia.jpg.asset.json";
-import cirurgias from "@/assets/cirurgias.jpg.asset.json";
-import vacinas from "@/assets/vacinas-importadas.png.asset.json";
-import fachada from "@/assets/petclin-fachada.png.asset.json";
-import tartarectomia from "@/assets/tartarectomia.png.asset.json";
+const petshop = "/images/products/petshop.jpg";
+const banhoTosa = "/images/services/banho-e-tosa-card.jpg";
+const exames = "/images/services/exames-laboratoriais.jpg";
+const ultrassom = "/images/services/ultrassonografia.jpg";
+const cirurgias = "/images/services/cirurgias.jpg";
+const vacinas = "/images/services/vacinas-importadas.png";
+const fachada = "/images/services/petclin-fachada.png";
+const tartarectomia = "/images/services/tartarectomia.png";
 
 interface Service {
   icon: LucideIcon;
@@ -39,49 +39,49 @@ const SERVICES: Service[] = [
       "Consultas e acompanhamento da saúde do seu pet, com atenção em cada etapa da vida — da primeira visita ao cuidado contínuo.",
     featured: true,
     wide: true,
-    image: fachada.url,
+    image: fachada,
   },
   {
     icon: ShoppingBag,
     name: "Pet Shop",
     description: "Produtos, rações e acessórios selecionados para o dia a dia do seu melhor amigo.",
-    image: petshop.url,
+    image: petshop,
   },
   {
     icon: Scissors,
     name: "Banho e Tosa",
     description: "Estética e bem-estar com calma, técnica e carinho em cada detalhe.",
-    image: banhoTosa.url,
+    image: banhoTosa,
   },
   {
     icon: FlaskConical,
     name: "Exames Laboratoriais",
     description: "Análises que ajudam o veterinário a acompanhar a saúde do seu pet com segurança.",
-    image: exames.url,
+    image: exames,
   },
   {
     icon: ScanHeart,
     name: "Ultrassonografia",
     description: "Imagens que auxiliam o veterinário em avaliações e no acompanhamento da saúde.",
-    image: ultrassom.url,
+    image: ultrassom,
   },
   {
     icon: Cross,
     name: "Cirurgias",
     description: "Procedimentos realizados com protocolos de segurança e acompanhamento atento.",
-    image: cirurgias.url,
+    image: cirurgias,
   },
   {
     icon: Syringe,
     name: "Vacinas Importadas",
     description: "Imunização com vacinas importadas, seguindo o calendário de cada pet.",
-    image: vacinas.url,
+    image: vacinas,
   },
   {
     icon: Sparkles,
     name: "Tartarectomia",
     description: "Remoção de tártaro para a saúde bucal e o conforto do seu pet.",
-    image: tartarectomia.url,
+    image: tartarectomia,
   },
 ];
 

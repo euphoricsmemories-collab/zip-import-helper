@@ -1,5 +1,5 @@
 import { Clock3, MapPin, Navigation } from "lucide-react";
-import facade from "@/assets/petclin-fachada.png.asset.json";
+const facade = "/images/services/petclin-fachada.png";
 import { ADDRESS_CITY } from "@/lib/petclinic";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { LOCATION_HOURS, petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
@@ -55,7 +55,7 @@ export function LocationSection() {
               )}
             </div>
             <figure className="pointer-events-none absolute top-4 right-4 w-24 overflow-hidden rounded-lg border-4 border-background bg-background shadow-lg sm:top-6 sm:right-6 sm:w-44">
-              <img src={facade.url} alt="Fachada da PetClin em Penedo" className="aspect-[4/3] w-full object-cover" loading="lazy" />
+              <img src={facade} alt="Fachada da PetClin em Penedo" className="aspect-[4/3] w-full object-cover" loading="lazy" />
               <figcaption className="hidden py-1.5 text-center text-xs font-semibold text-foreground sm:block">PetClin · Penedo</figcaption>
             </figure>
           </div>

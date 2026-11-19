@@ -1,11 +1,11 @@
 import { MessageCircle, Sparkles } from "lucide-react";
-import bathTosaAsset from "@/assets/banho-e-tosa-final.png.asset.json";
-import bathTosaBackgroundAsset from "@/assets/banho-e-tosa-background.png.asset.json";
+const bathTosaAsset = "/images/services/banho-e-tosa-final.png";
+const bathTosaBackgroundAsset = "/images/backgrounds/banho-e-tosa-background.png";
 import { Reveal } from "@/components/petclinic/Reveal";
 import { whatsappUrl } from "@/lib/petclinic";
 
-const bathTosa = bathTosaAsset.url;
-const bathTosaBackground = bathTosaBackgroundAsset.url;
+const bathTosa = bathTosaAsset;
+const bathTosaBackground = bathTosaBackgroundAsset;
 
 const HIGHLIGHTS = [
   "Banho com produtos adequados para cada pelagem",

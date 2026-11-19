@@ -76,7 +76,7 @@
 
 .patients-background {
   --deep-foreground: var(--deep);
-  background-image: url("/__l5e/assets-v1/5ebd7279-d3ed-4662-a1fd-7d67a4b1fb88/pacientes-fundo-aqua.png");
+  background-image: url("/images/backgrounds/pacientes-fundo-aqua.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

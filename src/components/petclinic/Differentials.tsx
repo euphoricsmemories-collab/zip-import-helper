@@ -1,9 +1,9 @@
 import { Reveal } from "@/components/petclinic/Reveal";
-import atendimento from "@/assets/diferencial-atendimento.avif.asset.json";
-import prevencao from "@/assets/diferencial-prevencao.avif.asset.json";
-import diagnostico from "@/assets/diferencial-diagnostico.avif.asset.json";
-import banho from "@/assets/diferencial-banho.avif.asset.json";
-import produtos from "@/assets/diferencial-produtos.png.asset.json";
+const atendimento = "/images/services/diferencial-atendimento.avif";
+const prevencao = "/images/services/diferencial-prevencao.avif";
+const diagnostico = "/images/services/diferencial-diagnostico.avif";
+const banho = "/images/services/diferencial-banho.avif";
+const produtos = "/images/products/diferencial-produtos.png";
 
 interface Pillar {
   image: string;
@@ -13,31 +13,31 @@ interface Pillar {
 
 const PILLARS: Pillar[] = [
   {
-    image: atendimento.url,
+    image: atendimento,
     title: "Atendimento veterinário",
     description:
       "Cuidado próximo e atento, do acolhimento na chegada ao acompanhamento depois da consulta.",
   },
   {
-    image: prevencao.url,
+    image: prevencao,
     title: "Prevenção e saúde",
     description:
       "Vacinas e orientações para proteger o dia a dia do seu pet em cada fase da vida.",
   },
   {
-    image: diagnostico.url,
+    image: diagnostico,
     title: "Serviços de diagnóstico",
     description:
       "Exames laboratoriais e ultrassonografia para apoiar o veterinário nas decisões clínicas.",
   },
   {
-    image: banho.url,
+    image: banho,
     title: "Cuidados estéticos",
     description:
       "Banho e tosa realizados com calma, técnica e afeto — bem-estar que se vê e se sente.",
   },
   {
-    image: produtos.url,
+    image: produtos,
     title: "Produtos e soluções para pets",
     description:
       "Pet shop com itens de alimentação, higiene e bem-estar, selecionados com cuidado.",

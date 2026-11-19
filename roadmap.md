@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Auditar imagens, recuperar arquivos em public/images, substituir referências e entregar relatório de portabilidade sem alterações visuais.
+
 - [x] Alterar somente o fundo de “Nossos Corajosos Pacientes” com a referência aqua enviada, preservando cartões e funcionamento do carrossel.
 
 - [x] Melhorar apenas a área abaixo do mapa: botão “Como chegar” em destaque e horários confirmados junto ao endereço, sem alterar mapa, fundo ou textos existentes.

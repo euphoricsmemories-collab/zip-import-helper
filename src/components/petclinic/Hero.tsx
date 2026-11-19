@@ -1,5 +1,5 @@
 import { Heart, PawPrint, Stethoscope } from "lucide-react";
-import heroDoctor from "@/assets/doutor-hero.png.asset.json";
+const heroDoctor = "/images/banners/doutor-hero.png";
 import { HOURS } from "@/lib/petclinic";
 
 const hoursLabel = HOURS.map((h) => h.time).join(" · Seg a Sex / Sáb");
@@ -60,7 +60,7 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-[34rem] lg:-mt-8 lg:max-w-none">
           <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-primary/15">
             <img
-              src={heroDoctor.url}
+              src={heroDoctor}
               alt="Veterinário da PetClin sorrindo segurando três filhotes de shih tzu na recepção da clínica"
               width={1059}
               height={1512}

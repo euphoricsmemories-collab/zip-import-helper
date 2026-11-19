@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
-import p1 from "@/assets/patient-1.jpg";
-import p2 from "@/assets/patient-2.jpg";
-import p3 from "@/assets/patient-3.jpg";
-import p4 from "@/assets/patient-4.jpg";
-import p5 from "@/assets/gallery-cat.jpg";
+const p1 = "/images/gallery/patient-1.jpg";
+const p2 = "/images/gallery/patient-2.jpg";
+const p3 = "/images/gallery/patient-3.jpg";
+const p4 = "/images/gallery/patient-4.jpg";
+const p5 = "/images/gallery/gallery-cat.jpg";
 
 const PATIENTS = [
   { src: p1, name: "Rochoso", text: "Texto demonstrativo: espaço para uma breve descrição do paciente." },

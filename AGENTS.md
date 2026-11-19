@@ -14,3 +14,4 @@
 - Keep the About photo carousel in its own browser-safe component with timing and cyclic position rules in a shared module; this isolates interaction from institutional content and makes rotation rules testable.
 - Keep Differential photos paired with their existing content in the section's data array; this preserves ordering across responsive layouts.
 - Keep Pet Shop photo slots in an ordered array with nullable sources and section-scoped styles; this supports pending real photos without duplication or changes to other sections.
+- Keep site image binaries in public/images with same-origin /images references and update its manifest (size and SHA-256) when replacing or adding images; this makes source exports portable and verifies actual files rather than live URLs. Legacy CDN pointers are provenance only, not runtime sources.
