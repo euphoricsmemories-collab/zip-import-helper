@@ -23,4 +23,5 @@
 - [x] Adicionar “Onde estamos” abaixo do agendamento, com incorporação oficial do Google Maps e foto da fachada sem bloquear interação.
 - [x] Usar o ponto exato do link enviado pelo usuário: -10.285294, -36.555820; não mostrar rua/número divergentes na nova seção.
 - [x] Sofisticar somente o fundo de “Onde estamos”: degradê menta→aqua, luz difusa e formas orgânicas discretas nos cantos, sem tocar no mapa nem no texto.
-- [ ] Validar interação do Google Maps em domínio autorizado (não disponível no ambiente de verificação).
+- [ ] Validar visualização e interação do mapa sem chave e rota no Google Maps no site publicado (verificação ao vivo do Google Maps indisponível neste ambiente).
+- [x] Substituir o mapa dependente de API Key por iframe público sem chave e abrir “Como chegar” como rota ao ponto confirmado da clínica, preservando a seção.

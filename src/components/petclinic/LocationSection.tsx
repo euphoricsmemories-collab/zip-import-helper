@@ -2,13 +2,10 @@ import { Clock3, MapPin, Navigation } from "lucide-react";
 const facade = "/images/services/petclin-fachada.png";
 import { ADDRESS_CITY } from "@/lib/petclinic";
 import { Reveal } from "@/components/petclinic/Reveal";
-import { LOCATION_HOURS, petclinEmbedUrl, PETCLIN_MAP_URL } from "@/lib/petclinic-location";
+import { LOCATION_HOURS, petclinEmbedUrl, PETCLIN_DIRECTIONS_URL } from "@/lib/petclinic-location";
 
 export function LocationSection() {
-  const browserKey = import.meta.env["VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY"];
-  const embedUrl = browserKey
-    ? petclinEmbedUrl(browserKey)
-    : undefined;
+  const embedUrl = petclinEmbedUrl();
 
   return (
     <section id="localizacao" className="relative isolate overflow-hidden bg-background py-14 sm:py-20" aria-labelledby="location-heading">
@@ -39,20 +36,14 @@ export function LocationSection() {
           </div>
           <div className="relative">
             <div className="h-[440px] overflow-hidden rounded-lg border border-border bg-muted sm:h-[520px]">
-              {embedUrl ? (
-                <iframe
+              <iframe
                   title="Localização da PetClin no Google Maps"
                   src={embedUrl}
                   className="h-full w-full border-0"
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="strict-origin-when-cross-origin"
-                />
-              ) : (
-                <div className="flex h-full items-center justify-center px-6 text-center text-muted-foreground">
-                  O mapa está temporariamente indisponível.
-                </div>
-              )}
+              />
             </div>
             <figure className="pointer-events-none absolute top-4 right-4 w-24 overflow-hidden rounded-lg border-4 border-background bg-background shadow-lg sm:top-6 sm:right-6 sm:w-44">
               <img src={facade} alt="Fachada da PetClin em Penedo" className="aspect-[4/3] w-full object-cover" loading="lazy" />
@@ -81,7 +72,7 @@ export function LocationSection() {
               </div>
             </div>
             <a
-              href={PETCLIN_MAP_URL}
+              href={PETCLIN_DIRECTIONS_URL}
               target="_blank"
               rel="noreferrer"
               className="inline-flex min-h-13 w-full items-center justify-center gap-2.5 rounded-xl bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-deep hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:w-auto"
