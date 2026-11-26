@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Refinar somente a continuação do fundo da galeria em desktop, removendo a patinha refletida e equilibrando a dissipação sem alterar o mobile.
+
 - [x] Prolongar visualmente as camadas do fundo da galeria nas duas extremidades, com dissipação orgânica e sem alterar conteúdo ou carrossel.
 
 - [x] Auditar imagens, recuperar arquivos em public/images, substituir referências e entregar relatório de portabilidade sem alterações visuais.

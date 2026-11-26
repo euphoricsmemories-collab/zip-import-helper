@@ -130,6 +130,24 @@
   .patients-background { --patients-edge-depth: 76px; }
 }
 
+/* Desktop side envelopes exclude reflected ornaments while retaining the
+   original artwork and its unique decorative shapes inside the gallery. */
+@media (min-width: 1024px) {
+  .patients-background::before {
+    --patients-edge-depth: 88px;
+    mask-image: var(--patients-edge-mask), linear-gradient(to right, var(--background) 0%, var(--background) 44%, transparent 72%);
+    mask-composite: intersect;
+    mask-position: top, top;
+  }
+
+  .patients-background::after {
+    --patients-edge-depth: 104px;
+    mask-image: var(--patients-edge-mask-reversed), linear-gradient(to right, transparent 0%, transparent 12%, var(--background) 38%, var(--background) 100%);
+    mask-composite: intersect;
+    mask-position: bottom, bottom;
+  }
+}
+
 .petshop-section {
   --petshop-wash: color-mix(in oklab, var(--teal-soft) 58%, var(--background));
   --petshop-photo-shadow: 0 12px 28px -12px color-mix(in oklab, var(--deep) 24%, transparent);
