@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Prolongar visualmente as camadas do fundo da galeria nas duas extremidades, com dissipação orgânica e sem alterar conteúdo ou carrossel.
+
 - [x] Auditar imagens, recuperar arquivos em public/images, substituir referências e entregar relatório de portabilidade sem alterações visuais.
 
 - [x] Alterar somente o fundo de “Nossos Corajosos Pacientes” com a referência aqua enviada, preservando cartões e funcionamento do carrossel.

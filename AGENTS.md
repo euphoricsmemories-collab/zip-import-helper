@@ -15,3 +15,4 @@
 - Keep Differential photos paired with their existing content in the section's data array; this preserves ordering across responsive layouts.
 - Keep Pet Shop photo slots in an ordered array with nullable sources and section-scoped styles; this supports pending real photos without duplication or changes to other sections.
 - Keep site image binaries in public/images with same-origin /images references and update its manifest (size and SHA-256) when replacing or adding images; this makes source exports portable and verifies actual files rather than live URLs. Legacy CDN pointers are provenance only, not runtime sources.
+- Keep gallery background continuations in pointer-transparent CSS pseudo-elements with curved alpha masks; reflecting the original edge preserves layer continuity without modifying the artwork or carousel logic, whose horizontal clipping stays on its own wrapper.
