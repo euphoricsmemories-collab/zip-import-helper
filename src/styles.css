@@ -47,6 +47,9 @@
   --color-navy-foreground: var(--navy-foreground);
   --color-teal-soft: var(--teal-soft);
   --color-services-sky: var(--services-sky);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-foreground: var(--whatsapp-foreground);
+  --color-hero-copy: var(--hero-copy);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -163,24 +166,15 @@
   .petshop-section img, .petshop-section a { transition: none; }
 }
 
-.hero-background {
-  background:
-    radial-gradient(ellipse 46% 40% at 88% 0%, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
-    radial-gradient(ellipse 40% 34% at 4% 24%, rgba(94, 188, 207, 0.2) 0%, rgba(255, 255, 255, 0) 70%),
-    radial-gradient(ellipse 36% 30% at 74% 78%, rgba(94, 188, 207, 0.14) 0%, rgba(255, 255, 255, 0) 72%),
-    radial-gradient(ellipse 32% 26% at 12% 92%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 70%),
-    linear-gradient(
-      160deg,
-      #ffffff 0%,
-      #f0faf9 32%,
-      #e3f5f4 62%,
-      #e0f2f7 86%,
-      #e6f4f9 100%
-    );
+.hero-section {
+  --hero-surface: oklch(0.98 0.0075 80.7);
+  --hero-copy: oklch(0.38 0.008 80);
+  background: var(--hero-surface);
 }
 
-.hero-heart {
-  color: color-mix(in oklab, var(--color-services-sky) 32%, transparent);
+.dark .hero-section {
+  --hero-surface: var(--background);
+  --hero-copy: var(--foreground);
 }
 
 .services-background {
@@ -366,6 +360,8 @@
   --navy-foreground: oklch(1 0 0);
   --teal-soft: oklch(0.955 0.03 186);
   --services-sky: #5ebccf;
+  --whatsapp: oklch(0.756 0.208 149.3);
+  --whatsapp-foreground: oklch(0.22 0.025 150);
   --about-photo-shadow: 0 14px 34px color-mix(in oklab, var(--navy) 16%, transparent);
   --service-photo-gradient: linear-gradient(
     to top,

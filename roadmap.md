@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Reformular apenas a primeira seção com fundo sólido, novos textos, botões de contato e serviços e cartão fixo de experiência; preservar foto, logo e demais seções.
+
 - [x] Substituir somente o fundo desktop da Galeria pelo padrão aprovado no mobile, adaptando o recorte e preservando o restante da página.
 
 - [x] Refinar somente a continuação do fundo da galeria em desktop, removendo a patinha refletida e equilibrando a dissipação sem alterar o mobile.

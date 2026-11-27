@@ -16,3 +16,4 @@
 - Keep Pet Shop photo slots in an ordered array with nullable sources and section-scoped styles; this supports pending real photos without duplication or changes to other sections.
 - Keep site image binaries in public/images with same-origin /images references and update its manifest (size and SHA-256) when replacing or adding images; this makes source exports portable and verifies actual files rather than live URLs. Legacy CDN pointers are provenance only, not runtime sources.
 - Keep gallery background continuations in pointer-transparent CSS pseudo-elements with the approved mobile curved alpha masks; use proportional desktop cropping and mobile-depth continuations instead of side masks, preserve mobile rules, and clip horizontal carousel movement on its own wrapper.
+- Keep hero contact links and hours derived from shared clinic constants and its visual tokens scoped to the hero; this avoids divergent contact details and changes to other sections.

@@ -1,88 +1,56 @@
-import { Heart, PawPrint, Stethoscope } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { HOURS, whatsappUrl } from "@/lib/petclinic";
 const heroDoctor = "/images/banners/doutor-hero.png";
-import { HOURS } from "@/lib/petclinic";
 
-const hoursLabel = HOURS.map((h) => h.time).join(" · Seg a Sex / Sáb");
+const contactUrl = whatsappUrl("Olá, vim pelo site e gostaria de agendar um atendimento.");
+const hoursLabel = HOURS.map((h) => `${h.days}: ${h.time}`).join(" · ");
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative isolate overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-12 lg:pt-40 lg:pb-16">
-      {/* Fundo decorativo */}
-      <div aria-hidden="true" className="hero-background pointer-events-none absolute inset-0 -z-10">
-        <Heart className="hero-heart hero-heart-float absolute top-[10%] left-[9%] size-4 fill-current" />
-        <Heart className="hero-heart hero-heart-float-delayed absolute top-[24%] left-[26%] size-2.5 fill-current" />
-        <Heart className="hero-heart hero-heart-float-slow absolute top-[38%] left-[6%] size-3 fill-current" />
-        <Heart className="hero-heart hero-heart-float absolute top-[30%] left-[46%] size-3.5 fill-current" />
-        <Heart className="hero-heart hero-heart-float-delayed absolute right-[12%] bottom-[34%] size-4 fill-current [animation-delay:-9s]" />
-        <Heart className="hero-heart hero-heart-float-slow absolute right-[26%] bottom-[12%] size-2.5 fill-current" />
-        <Heart className="hero-heart hero-heart-float absolute right-[6%] bottom-[58%] size-3 fill-current [animation-delay:-5s]" />
-        <Heart className="hero-heart hero-heart-float-slow absolute right-[44%] bottom-[6%] size-3 fill-current [animation-delay:-11s]" />
-      </div>
-
-      <div className="mx-auto grid max-w-7xl items-center gap-6 px-5 sm:px-8 sm:gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-8">
-        {/* Lado esquerdo */}
-        <div className="animate-fade-in [animation-duration:700ms]">
-          <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-teal-soft px-4 py-1.5 text-xs font-semibold tracking-wide text-foreground/80">
-            <PawPrint className="size-3.5 text-primary" aria-hidden="true" />
-            Clínica Veterinária em Penedo, Alagoas
-          </span>
-
-          <h1 className="mt-4 max-w-xl font-display text-4xl leading-[1.08] font-semibold tracking-tight text-foreground sm:mt-6 sm:text-5xl lg:text-6xl">
-            Seu pet merece{" "}
-            <span className="relative inline-block text-primary italic">
-              cuidado
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 220 12"
-                className="absolute -bottom-1.5 left-0 w-full text-accent"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M4 8 C 60 2, 150 2, 216 7"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-              </svg>
-            </span>{" "}
-            em cada fase da vida.
+    <section id="inicio" className="hero-section relative isolate overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16 lg:pt-36 lg:pb-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:gap-14 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div>
+          <h1 className="max-w-xl font-display text-[38px] leading-[1.12] font-semibold tracking-normal text-foreground sm:text-5xl lg:text-6xl">
+            Seu pet em <span className="text-primary">boas mãos</span>, aqui em Penedo.
           </h1>
-
-          <p className="mt-4 max-w-lg text-lg leading-relaxed text-muted-foreground sm:mt-6">
-            Na PetClin, unimos cuidado veterinário, tecnologia e carinho para proporcionar mais
-            saúde e qualidade de vida ao seu melhor amigo.
+          <p className="mt-6 max-w-lg text-base leading-relaxed text-hero-copy sm:text-lg">
+            Consultas, vacinas, exames, banho e tosa. Tudo num lugar só, com gente que conhece o seu pet pelo nome.
           </p>
-
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button asChild variant="heroWhatsapp" className="h-12 w-full rounded-[8px] px-6 text-base font-semibold sm:w-auto">
+              <a href={contactUrl} target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="size-5">
+                  <path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5ZM12 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.3-.4A10 10 0 1 1 12 22Zm5.5-7.5c-.3-.2-1.8-.9-2-.9-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.4.3-.4.9-1.5.1-.2 0-.4 0-.6l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.2.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6 1.9.8 2.6.9 3.5.8.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4Z" />
+                </svg>
+                Chamar no WhatsApp
+              </a>
+            </Button>
+            <Button asChild variant="heroOutline" className="h-12 w-full rounded-[8px] px-6 text-base font-semibold sm:w-auto">
+              <a href="#servicos">Ver serviços</a>
+            </Button>
+          </div>
+          <p className="mt-4 max-w-lg text-xs leading-relaxed text-hero-copy">
+            Respondemos rapidinho · {hoursLabel}
+          </p>
+          <div className="mt-6 flex max-w-lg items-center gap-4 rounded-[12px] border border-border bg-card px-5 py-4">
+            <strong className="shrink-0 font-display text-4xl font-semibold text-primary">10+</strong>
+            <p className="max-w-[13rem] text-sm leading-relaxed text-hero-copy">anos cuidando dos pets de Penedo</p>
+          </div>
         </div>
-
-        {/* Imagem principal */}
-        <div className="relative mx-auto w-full max-w-[34rem] lg:-mt-8 lg:max-w-none">
-          <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-primary/15">
+        <div className="relative mx-auto w-full max-w-[30rem] pr-3 pb-3">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 top-3 left-3 rounded-[16px] bg-primary" />
+          <div className="relative overflow-hidden rounded-[16px]">
             <img
               src={heroDoctor}
-              alt="Veterinário da PetClin sorrindo segurando três filhotes de shih tzu na recepção da clínica"
+              alt="Veterinário da PetClin sorrindo com filhotes no colo"
               width={1059}
               height={1512}
-              className="aspect-[4/4.4] w-full object-cover object-top"
+              className="aspect-[4/4.6] w-full object-cover object-top"
               fetchPriority="high"
             />
           </div>
-
-          <div className="hero-card-float absolute bottom-5 left-3 flex w-40 items-center gap-2.5 rounded-xl border border-border/50 bg-card/95 p-2.5 text-card-foreground shadow-xl shadow-navy/10 backdrop-blur-sm sm:bottom-7 sm:left-5">
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-teal-soft text-primary">
-              <Stethoscope className="size-5" aria-hidden="true" />
-            </span>
-            <span className="min-w-0 leading-tight">
-              <strong className="block text-sm font-semibold">+10 anos</strong>
-              <span className="block text-[11px] text-muted-foreground">cuidando de pets</span>
-            </span>
-          </div>
         </div>
       </div>
-
-      {/* marcação discreta de horário para leitores de tela */}
-      <span className="sr-only">{hoursLabel}</span>
     </section>
   );
 }
