@@ -50,8 +50,6 @@
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
   --color-hero-copy: var(--hero-copy);
-  --color-hero-experience-rule: var(--hero-experience-rule);
-  --color-hero-experience-copy: var(--hero-experience-copy);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -177,16 +175,6 @@
 .dark .hero-section {
   --hero-surface: var(--background);
   --hero-copy: var(--foreground);
-}
-
-.hero-experience {
-  --hero-experience-rule: oklch(from #E3DED5 l c h);
-  --hero-experience-copy: oklch(from #2B2B2B l c h);
-}
-
-.dark .hero-experience {
-  --hero-experience-rule: var(--border);
-  --hero-experience-copy: var(--foreground);
 }
 
 .services-background {

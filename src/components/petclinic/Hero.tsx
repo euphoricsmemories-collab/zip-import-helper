@@ -25,12 +25,9 @@ export function Hero() {
               </a>
             </Button>
           </div>
-          <div className="hero-experience mt-6 flex max-w-lg items-center gap-[14px] border-y border-hero-experience-rule py-6">
-            <span className="shrink-0 font-display text-[64px] leading-none font-normal text-primary lg:text-[80px]">10+</span>
-            <p className="min-w-0 text-base leading-[1.35] font-normal text-hero-experience-copy">
-              anos cuidando dos<br />
-              pets de Penedo
-            </p>
+          <div className="mt-6 flex max-w-lg items-center gap-4 rounded-[12px] border border-border bg-card px-5 py-4">
+            <strong className="shrink-0 font-display text-4xl font-semibold text-primary">10+</strong>
+            <p className="max-w-[13rem] text-sm leading-relaxed text-hero-copy">anos cuidando dos pets de Penedo</p>
           </div>
         </div>
         <div className="relative mx-auto w-full max-w-[30rem] pr-3 pb-3">
