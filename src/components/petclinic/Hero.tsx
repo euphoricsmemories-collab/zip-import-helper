@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { HOURS, whatsappUrl } from "@/lib/petclinic";
+import { whatsappUrl } from "@/lib/petclinic";
 const heroDoctor = "/images/banners/doutor-hero.png";
 
 const contactUrl = whatsappUrl("Olá, vim pelo site e gostaria de agendar um atendimento.");
-const hoursLabel = HOURS.map((h) => `${h.days}: ${h.time}`).join(" · ");
 
 export function Hero() {
   return (
@@ -25,13 +24,7 @@ export function Hero() {
                 Chamar no WhatsApp
               </a>
             </Button>
-            <Button asChild variant="heroOutline" className="h-12 w-full rounded-[8px] px-6 text-base font-semibold sm:w-auto">
-              <a href="#servicos">Ver serviços</a>
-            </Button>
           </div>
-          <p className="mt-4 max-w-lg text-xs leading-relaxed text-hero-copy">
-            Respondemos rapidinho · {hoursLabel}
-          </p>
           <div className="mt-6 flex max-w-lg items-center gap-4 rounded-[12px] border border-border bg-card px-5 py-4">
             <strong className="shrink-0 font-display text-4xl font-semibold text-primary">10+</strong>
             <p className="max-w-[13rem] text-sm leading-relaxed text-hero-copy">anos cuidando dos pets de Penedo</p>
