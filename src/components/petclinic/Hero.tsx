@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { PawPrint } from "lucide-react";
 import { whatsappUrl } from "@/lib/petclinic";
 const heroDoctor = "/images/banners/doutor-hero.png";
 
@@ -26,19 +25,12 @@ export function Hero() {
               </a>
             </Button>
           </div>
-          <div className="hero-experience mt-6 grid max-w-lg grid-cols-[auto_1px_minmax(0,1fr)] items-center gap-3 rounded-[12px] border border-b-4 border-hero-experience-border bg-hero-experience px-3 py-4 sm:gap-5 sm:px-5">
-            <div className="flex flex-col items-center gap-1 text-primary">
-              <PawPrint className="size-5" aria-hidden="true" />
-              <strong className="font-display text-[56px] leading-none font-bold lg:text-[72px]">10+</strong>
-            </div>
-            <div aria-hidden="true" className="relative self-stretch">
-              <span className="absolute inset-y-[20%] w-px bg-primary/25" />
-            </div>
-            <div className="min-w-0">
-              <p className="text-[15px] leading-snug font-normal text-hero-copy">anos cuidando dos</p>
-              <p className="text-[15px] leading-snug font-semibold text-hero-experience-emphasis">pets de Penedo</p>
-              <p className="mt-1 text-xs leading-snug text-hero-experience-muted">Clínica veterinária e pet shop</p>
-            </div>
+          <div className="hero-experience mt-6 flex max-w-lg items-center gap-[14px] border-y border-hero-experience-rule py-6">
+            <span className="shrink-0 font-display text-[64px] leading-none font-normal text-primary lg:text-[80px]">10+</span>
+            <p className="min-w-0 text-base leading-[1.35] font-normal text-hero-experience-copy">
+              anos cuidando dos<br />
+              pets de Penedo
+            </p>
           </div>
         </div>
         <div className="relative mx-auto w-full max-w-[30rem] pr-3 pb-3">
