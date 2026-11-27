@@ -50,6 +50,8 @@
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
   --color-hero-copy: var(--hero-copy);
+  --color-hero-stat-ink: var(--hero-stat-ink);
+  --color-hero-stat-accent: var(--hero-stat-accent);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -169,12 +171,16 @@
 .hero-section {
   --hero-surface: oklch(0.98 0.0075 80.7);
   --hero-copy: oklch(0.38 0.008 80);
+  --hero-stat-ink: #1f2a37;
+  --hero-stat-accent: #0f6b63;
   background: var(--hero-surface);
 }
 
 .dark .hero-section {
   --hero-surface: var(--background);
   --hero-copy: var(--foreground);
+  --hero-stat-ink: var(--foreground);
+  --hero-stat-accent: var(--primary);
 }
 
 .services-background {

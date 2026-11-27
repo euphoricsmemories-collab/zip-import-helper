@@ -27,7 +27,11 @@ export function Hero() {
           </div>
           <div className="mt-6 flex max-w-lg items-center gap-4 rounded-[12px] border border-border bg-card px-5 py-4">
             <strong className="shrink-0 font-display text-4xl font-semibold text-primary">10+</strong>
-            <p className="max-w-[13rem] text-sm leading-relaxed text-hero-copy">anos cuidando dos pets de Penedo</p>
+            <p className="max-w-[13rem] whitespace-nowrap font-display text-[20px] font-normal italic leading-[1.25] tracking-[-0.01em] text-hero-stat-ink sm:text-[24px]">
+              anos cuidando
+              <br />
+              dos pets de <span className="text-hero-stat-accent">Penedo</span>
+            </p>
           </div>
         </div>
         <div className="relative mx-auto w-full max-w-[30rem] pr-3 pb-3">
