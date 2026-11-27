@@ -173,7 +173,14 @@
   --hero-copy: oklch(0.38 0.008 80);
   --hero-stat-ink: #1f2a37;
   --hero-stat-accent: #0f6b63;
+  --hero-rule: #e3ded5;
   background: var(--hero-surface);
+}
+
+.hero-experience {
+  padding-block: 18px;
+  border-top: 1px solid var(--hero-rule);
+  border-bottom: 1px solid var(--hero-rule);
 }
 
 .dark .hero-section {
