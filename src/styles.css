@@ -50,6 +50,10 @@
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
   --color-hero-copy: var(--hero-copy);
+  --color-hero-experience: var(--hero-experience);
+  --color-hero-experience-border: var(--hero-experience-border);
+  --color-hero-experience-emphasis: var(--hero-experience-emphasis);
+  --color-hero-experience-muted: var(--hero-experience-muted);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -175,6 +179,20 @@
 .dark .hero-section {
   --hero-surface: var(--background);
   --hero-copy: var(--foreground);
+}
+
+.hero-experience {
+  --hero-experience: oklch(from #EAF5F3 l c h);
+  --hero-experience-border: oklch(from #BFE0DB l c h);
+  --hero-experience-emphasis: oklch(0.22 0.008 180);
+  --hero-experience-muted: oklch(0.48 0.008 180);
+}
+
+.dark .hero-experience {
+  --hero-experience: var(--secondary);
+  --hero-experience-border: color-mix(in oklab, var(--primary) 30%, var(--secondary));
+  --hero-experience-emphasis: var(--foreground);
+  --hero-experience-muted: var(--muted-foreground);
 }
 
 .services-background {
