@@ -178,9 +178,15 @@
 }
 
 .hero-experience {
-  padding-block: 18px;
+  padding-block: 12px;
   border-top: 1px solid var(--hero-rule);
   border-bottom: 1px solid var(--hero-rule);
+}
+
+@media (min-width: 640px) {
+  .hero-experience {
+    padding-block: 18px;
+  }
 }
 
 .dark .hero-section {
