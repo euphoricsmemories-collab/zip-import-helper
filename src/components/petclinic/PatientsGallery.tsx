@@ -67,7 +67,7 @@ export function PatientsGallery() {
           <span aria-hidden="true" className="size-1.5 rounded-full bg-deep-foreground" />
           Galeria
         </p>
-        <h2 className="mt-3 font-display text-4xl font-medium tracking-tight text-deep-foreground sm:text-5xl lg:text-6xl">
+        <h2 className="mt-3">
           Nossos Corajosos Pacientes
         </h2>
       </div>
@@ -102,8 +102,8 @@ export function PatientsGallery() {
                 className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent"
               />
               <figcaption className="absolute inset-x-0 bottom-0 p-5 text-left text-primary-foreground sm:p-6">
-                <p className="font-display text-2xl sm:text-3xl">{p.name}</p>
-                <p className="mt-1.5 text-sm leading-snug opacity-90">{p.text}</p>
+                <p className="font-serif text-2xl leading-[1.2] font-semibold text-primary-foreground sm:text-[26px]">{p.name}</p>
+                <p className="mt-1.5 text-sm leading-[1.55] text-primary-foreground opacity-90">{p.text}</p>
               </figcaption>
             </figure>
           ))}

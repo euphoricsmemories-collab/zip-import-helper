@@ -24,13 +24,13 @@ export function CtaSection() {
 
       <div className="relative mx-auto max-w-4xl px-5 text-center sm:px-8">
         <Reveal>
-          <p className="text-xs font-bold tracking-[0.24em] text-white/70 uppercase">
+          <p className="clinic-micro text-white/70 uppercase">
             PetClin — Clínica Veterinária
           </p>
-          <h2 className="mt-4 font-display text-3xl leading-[1.15] font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 text-deep-foreground">
             Está na hora de cuidar de quem sempre está ao seu lado.
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-white/80">
+          <p className="mx-auto mt-5 max-w-xl text-deep-foreground/80">
             Entre em contato com a PetClin e encontre o cuidado que seu pet merece.
           </p>
 
@@ -38,7 +38,7 @@ export function CtaSection() {
             href={WHATSAPP_DEFAULT_URL}
             target="_blank"
             rel="noreferrer"
-            className="mt-9 inline-flex items-center gap-2.5 rounded-full bg-white px-9 py-4 text-base font-bold text-deep shadow-2xl shadow-navy/30 transition-all hover:-translate-y-0.5 hover:bg-white/95"
+            className="mt-9 inline-flex items-center gap-2.5 rounded-full bg-white px-9 py-4 text-base font-semibold text-type-accent shadow-2xl shadow-navy/30 transition-all hover:-translate-y-0.5 hover:bg-white/95"
           >
             <MessageCircle className="size-5" aria-hidden="true" />
             Agendar pelo WhatsApp

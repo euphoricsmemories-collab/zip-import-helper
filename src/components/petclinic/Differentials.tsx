@@ -52,12 +52,12 @@ export function Differentials() {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="inline-flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-primary uppercase">
+          <p className="clinic-micro inline-flex items-center gap-3 text-primary uppercase">
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
             Diferenciais
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
           </p>
-          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4">
             Cuidado completo para quem faz parte da sua família.
           </h2>
         </Reveal>
@@ -74,10 +74,10 @@ export function Differentials() {
                   <img src={pillar.image} alt={pillar.title} loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transform-none motion-reduce:transition-none" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                <h3 className="font-display text-lg font-semibold text-foreground">
+                <h3>
                   {pillar.title}
                 </h3>
-                <p className="mt-2.5 text-[0.95rem] leading-relaxed text-muted-foreground">
+                <p className="clinic-copy mt-2.5">
                   {pillar.description}
                 </p>
                 </div>

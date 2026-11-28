@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Padronizar somente a tipografia de todo o site com Fraunces/Figtree, preservando conteúdo, fotos e espaçamentos.
+
 - [x] Reformular somente Serviços com fotos limpas, textos separados, numeração, novo cabeçalho e grade editorial no celular e no computador.
 
 - [x] Ajustar somente a hero: filetes no bloco “10+”, ritmo de espaçamentos, quebras do título e bloco turquesa completo atrás da foto.

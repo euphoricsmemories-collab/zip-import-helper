@@ -26,14 +26,14 @@ export function Universe() {
     <section id="estrutura" className="petshop-section relative isolate scroll-mt-24 overflow-hidden py-20 sm:py-28">
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
         <Reveal className="max-w-xl">
-          <p className="flex items-center gap-3 text-xs font-bold text-primary uppercase">
+          <p className="clinic-micro flex items-center gap-3 text-primary uppercase">
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
             Universo PetClin
           </p>
-          <h2 className="mt-6 font-display text-3xl leading-[1.16] font-semibold text-foreground sm:text-4xl lg:text-5xl">
-            Seu pet merece mais. <span className="text-deep">Descubra um universo de cuidado.</span>
+          <h2 className="mt-6">
+            Seu pet merece mais. <span className="text-type-accent">Descubra um universo de cuidado.</span>
           </h2>
-          <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
+          <p className="clinic-copy mt-6 max-w-md">
             Alimentação, brinquedos e acessórios escolhidos com cuidado. No nosso Pet Shop, você encontra variedade para cada fase da vida do seu pet.
           </p>
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-4 border-t border-border pt-6">
@@ -61,7 +61,7 @@ export function Universe() {
                 ) : (
                   <div role="img" aria-label={`Espaço reservado para foto de ${photo.label.toLowerCase()}`} className="petshop-photo-placeholder flex h-full w-full flex-col items-center justify-center gap-3 px-4 text-center text-primary">
                     <ImageIcon aria-hidden="true" className="size-7 opacity-40" strokeWidth={1} />
-                    <span className="text-xs font-medium">{photo.label}</span>
+                    <span className="text-sm font-medium">{photo.label}</span>
                   </div>
                 )}
               </figure>

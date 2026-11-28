@@ -27,10 +27,10 @@ export function LocationSection() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <div className="mb-8 text-center sm:mb-10">
-            <h2 id="location-heading" className="font-display text-3xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+            <h2 id="location-heading">
               Onde estamos
             </h2>
-            <p className="mt-3 font-outfit text-base leading-relaxed text-muted-foreground">
+            <p className="clinic-copy mt-3">
               Venha nos visitar — estamos prontos para cuidar do seu pet
             </p>
           </div>
@@ -47,17 +47,17 @@ export function LocationSection() {
             </div>
             <figure className="pointer-events-none absolute top-4 right-4 w-24 overflow-hidden rounded-lg border-4 border-background bg-background shadow-lg sm:top-6 sm:right-6 sm:w-44">
               <img src={facade} alt="Fachada da PetClin em Penedo" className="aspect-[4/3] w-full object-cover" loading="lazy" />
-              <figcaption className="hidden py-1.5 text-center text-xs font-semibold text-foreground sm:block">PetClin · Penedo</figcaption>
+              <figcaption className="hidden py-1.5 text-center text-sm font-medium text-type-copy sm:block">PetClin · Penedo</figcaption>
             </figure>
           </div>
           <div className="mt-7 grid gap-7 border-t border-primary/15 pt-6 sm:mt-8 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end sm:gap-10 sm:pt-7">
             <div className="grid gap-6 md:grid-cols-[minmax(0,0.8fr)_minmax(18rem,1.2fr)] md:gap-10">
-              <p className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground">
+              <p className="flex items-start gap-2.5 text-sm leading-[1.55] text-type-copy">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                 <span>{ADDRESS_CITY}</span>
               </p>
               <div>
-                <h3 className="flex items-center gap-2.5 text-sm font-semibold text-foreground">
+                <h3 className="flex items-center gap-2.5">
                   <Clock3 className="size-4 shrink-0 text-primary" aria-hidden="true" />
                   Horário de funcionamento
                 </h3>
@@ -65,7 +65,7 @@ export function LocationSection() {
                   {LOCATION_HOURS.map(({ days, time }) => (
                     <div key={days} className="flex items-baseline justify-between gap-6 text-sm">
                       <dt className="font-semibold text-foreground">{days}</dt>
-                      <dd className="whitespace-nowrap tabular-nums text-muted-foreground">{time}</dd>
+                      <dd className="whitespace-nowrap tabular-nums text-type-copy">{time}</dd>
                     </div>
                   ))}
                 </dl>

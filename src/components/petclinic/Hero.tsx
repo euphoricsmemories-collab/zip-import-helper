@@ -13,17 +13,17 @@ export function Hero() {
             <span className="sm:hidden">
               Seu pet em
               <br />
-              <span className="whitespace-nowrap"><span className="text-primary">boas mãos</span>,</span>
+              <span className="whitespace-nowrap"><span className="text-type-accent">boas mãos</span>,</span>
               <br />
               aqui em Penedo.
             </span>
             <span className="hidden sm:inline">
-              Seu pet em <span className="text-primary">boas mãos</span>,
+              Seu pet em <span className="text-type-accent">boas mãos</span>,
               <br />
               aqui em Penedo.
             </span>
           </h1>
-          <p className="mt-3 max-w-lg text-base leading-relaxed text-hero-copy sm:mt-6 sm:text-lg">
+          <p className="clinic-copy mt-3 max-w-lg sm:mt-6">
             Consultas, vacinas, exames, banho e tosa. Tudo num lugar só, com gente que conhece o seu pet pelo nome.
           </p>
           <div className="mt-[22px] flex flex-col gap-3 sm:mt-8 sm:flex-row">
@@ -37,7 +37,7 @@ export function Hero() {
             </Button>
           </div>
           <div className="hero-experience mt-[18px] flex max-w-lg items-center gap-4 sm:mt-7">
-            <strong className="shrink-0 font-display text-4xl font-semibold text-primary">10+</strong>
+            <strong className="shrink-0 font-serif text-4xl font-semibold text-type-accent">10+</strong>
             <p className="max-w-[13rem] whitespace-nowrap font-display text-[20px] font-normal italic leading-[1.25] tracking-[-0.01em] text-hero-stat-ink sm:text-[24px]">
               anos cuidando
               <br />

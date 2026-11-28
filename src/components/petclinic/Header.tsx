@@ -29,10 +29,10 @@ export function Header() {
             <PawPrint className="size-5" aria-hidden="true" />
           </span>
           <span className="leading-tight">
-            <span className="block font-display text-xl font-semibold tracking-tight text-foreground">
-              Pet<span className="text-primary">Clin</span>
+            <span className="block font-serif text-xl font-semibold tracking-normal text-type-ink">
+              Pet<span className="text-type-accent">Clin</span>
             </span>
-            <span className="block text-[0.68rem] font-medium tracking-[0.18em] text-muted-foreground uppercase">
+            <span className="clinic-micro block text-type-copy uppercase">
               Clínica Veterinária
             </span>
           </span>
@@ -55,7 +55,7 @@ export function Header() {
             href={WHATSAPP_DEFAULT_URL}
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-all hover:-translate-y-0.5 hover:bg-primary/90 sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-base font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-all hover:-translate-y-0.5 hover:bg-primary/90 sm:inline-flex"
           >
             <MessageCircle className="size-4" aria-hidden="true" />
             Agendar
@@ -90,7 +90,7 @@ export function Header() {
               target="_blank"
               rel="noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold text-primary-foreground"
+              className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-base font-semibold text-primary-foreground"
             >
               <MessageCircle className="size-4" aria-hidden="true" />
               Agendar pelo WhatsApp

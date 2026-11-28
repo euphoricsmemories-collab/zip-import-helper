@@ -28,14 +28,14 @@ export function BathTosa() {
 
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal>
-          <p className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-primary uppercase">
+          <p className="clinic-micro flex items-center gap-3 text-primary uppercase">
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
             Banho e Tosa
           </p>
-          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
+          <h2 className="mt-4">
             Seu pet bonito, confortável e bem cuidado.
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+          <p className="clinic-copy mt-5">
             O banho e a tosa vão além da estética: é um momento de cuidado que também contribui
             para a saúde e o conforto do seu pet no dia a dia.
           </p>
@@ -46,7 +46,7 @@ export function BathTosa() {
                 <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-teal-soft text-primary">
                   <Sparkles className="size-3.5" aria-hidden="true" />
                 </span>
-                <span className="leading-relaxed text-foreground/85">{item}</span>
+                <span className="clinic-copy">{item}</span>
               </li>
             ))}
           </ul>

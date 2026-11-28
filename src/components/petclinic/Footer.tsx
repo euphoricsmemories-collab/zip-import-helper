@@ -33,15 +33,15 @@ export function Footer() {
               <PawPrint className="size-5" aria-hidden="true" />
             </span>
             <span className="leading-tight">
-              <span className="block font-display text-xl font-semibold tracking-tight text-white">
-                Pet<span className="text-primary">Clin</span>
+              <span className="block font-serif text-xl font-semibold tracking-normal text-white">
+                Pet<span className="text-type-accent">Clin</span>
               </span>
-              <span className="block text-[0.68rem] font-medium tracking-[0.18em] text-white/60 uppercase">
+              <span className="block text-sm font-medium tracking-normal text-white/60">
                 Clínica Veterinária
               </span>
             </span>
           </a>
-          <p className="mt-5 max-w-xs text-sm leading-relaxed">
+          <p className="mt-5 max-w-xs text-sm leading-[1.55] text-navy-foreground/80">
             Clínica veterinária em Penedo, Alagoas, reunindo saúde, diagnóstico, prevenção e
             cuidados estéticos para cães e gatos.
           </p>
@@ -69,7 +69,7 @@ export function Footer() {
 
         {/* Serviços */}
         <nav className="md:col-span-4" aria-label="Serviços da PetClin">
-          <h3 className="text-sm font-bold tracking-widest text-white uppercase">Serviços</h3>
+          <h3 className="text-navy-foreground">Serviços</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {FOOTER_SERVICES.map((service) => (
               <li key={service}>
@@ -83,7 +83,7 @@ export function Footer() {
 
         {/* Contato */}
         <div className="md:col-span-4">
-          <h3 className="text-sm font-bold tracking-widest text-white uppercase">Contato</h3>
+          <h3 className="text-navy-foreground">Contato</h3>
           <ul className="mt-5 space-y-4 text-sm">
             <li className="flex items-start gap-3">
               <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
@@ -130,11 +130,11 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-6 text-xs text-white/60 sm:flex-row sm:px-8">
-          <p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-6 text-sm text-white/60 sm:flex-row sm:px-8">
+          <p className="text-sm text-navy-foreground/60">
             © {year} PetClin — Clínica Veterinária. Todos os direitos reservados.
           </p>
-          <p>Penedo, Alagoas</p>
+          <p className="text-sm text-navy-foreground/60">Penedo, Alagoas</p>
         </div>
       </div>
     </footer>

@@ -12,8 +12,11 @@
 
 @theme inline {
   --font-sans: "Figtree", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-outfit: "Outfit", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --color-type-ink: var(--type-ink);
+  --color-type-copy: var(--type-copy);
+  --color-type-accent: var(--type-accent);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -349,6 +352,9 @@
 }
 
 :root {
+  --type-ink: #1f2a37;
+  --type-copy: #4a5560;
+  --type-accent: #0f6b63;
   --radius: 1rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.28 0.055 255);
@@ -393,6 +399,9 @@
 }
 
 .dark {
+  --type-ink: var(--foreground);
+  --type-copy: var(--muted-foreground);
+  --type-accent: var(--primary);
   --background: oklch(0.28 0.055 255);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.33 0.055 255);
@@ -443,9 +452,71 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--type-ink);
+  }
+
+  h3 {
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--type-ink);
+    overflow-wrap: anywhere;
+  }
+
+  p, blockquote {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--type-copy);
+  }
+
+  blockquote, q {
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+
+  button, input, textarea, select, label, a {
+    font-family: var(--font-sans);
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  @media (min-width: 1024px) {
+    h2 { font-size: 44px; }
+    p, blockquote { font-size: 17px; }
+  }
+
   ::selection {
     background-color: color-mix(in oklab, var(--color-primary) 25%, transparent);
   }
+}
+
+@utility clinic-copy {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--type-copy);
+  @media (min-width: 1024px) { font-size: 17px; }
+}
+
+@utility clinic-micro {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
 /* Scroll reveal (aplicado via IntersectionObserver no componente Reveal) */

@@ -48,11 +48,11 @@ export function Diagnostics() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal>
-          <p className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-primary uppercase">
+          <p className="clinic-micro flex items-center gap-3 text-primary uppercase">
             <span aria-hidden="true" className="h-px w-8 bg-accent" />
             Diagnóstico e Saúde
           </p>
-          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
+          <h2 className="mt-4">
             Mais precisão para cuidar da saúde do seu pet.
           </h2>
           <div className="mt-9 grid gap-4 sm:grid-cols-2">
@@ -64,17 +64,17 @@ export function Diagnostics() {
                 <span className="flex size-11 items-center justify-center rounded-2xl bg-teal-soft text-primary">
                   <service.icon className="size-5" aria-hidden="true" />
                 </span>
-                <h3 className="mt-4 font-display text-lg font-semibold text-foreground">
+                <h3 className="mt-4">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="clinic-copy mt-2">
                   {service.description}
                 </p>
                 <a
                   href={whatsappUrl(service.message)}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 inline-flex text-sm font-semibold text-primary transition-colors hover:text-primary/75"
+                  className="mt-4 inline-flex text-base font-medium text-type-accent transition-colors hover:text-type-accent/75"
                 >
                   {service.cta} →
                 </a>

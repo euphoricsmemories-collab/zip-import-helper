@@ -85,22 +85,19 @@ function ServiceCard({ service, number, featured = false }: ServiceCardProps) {
       />
 
       <div className="pt-3.5">
-        <span className="block font-display text-sm tracking-[0.05em] text-services-accent">
+        <span className="block font-serif text-sm tracking-normal text-type-accent">
           {String(number).padStart(2, "0")}
         </span>
         <h3
           className={cn(
-            "mt-1 font-display font-semibold tracking-tight text-services-ink",
-            featured ? "text-2xl" : "text-lg lg:text-2xl",
+            "mt-1 leading-[1.2]",
+            featured ? "text-2xl" : "text-[19px] lg:text-2xl",
           )}
         >
           {service.name}
         </h3>
         <p
-          className={cn(
-            "mt-1.5 leading-[1.5] text-services-copy",
-            featured ? "text-[15px]" : "text-sm lg:text-[15px]",
-          )}
+          className="clinic-copy mt-1.5"
         >
           {service.description}
         </p>
@@ -108,12 +105,9 @@ function ServiceCard({ service, number, featured = false }: ServiceCardProps) {
           href={serviceWhatsappUrl(service.name)}
           target="_blank"
           rel="noreferrer"
-          className={cn(
-            "mt-3 inline-flex whitespace-nowrap font-medium text-services-accent no-underline underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-services-accent",
-            featured ? "text-[15px]" : "text-sm",
-          )}
+          className="mt-3 block text-base font-medium text-type-accent no-underline underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-services-accent"
         >
-          Agendar pelo WhatsApp →
+          Agendar pelo <span className="whitespace-nowrap">WhatsApp →</span>
         </a>
       </div>
     </article>
@@ -128,10 +122,10 @@ export function Services() {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <header>
-          <h2 className="font-display text-[32px] font-semibold tracking-tight text-services-ink lg:text-[44px]">
+          <h2>
             O que fazemos aqui na <span className="text-services-accent">PetClin</span>
           </h2>
-          <p className="mt-3 whitespace-nowrap text-base text-services-copy">
+          <p className="clinic-copy mt-3 whitespace-nowrap">
             Atendimento para cães e gatos em Penedo.
           </p>
         </header>
