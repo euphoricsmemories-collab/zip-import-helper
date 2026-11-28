@@ -46,7 +46,10 @@
   --color-navy: var(--navy);
   --color-navy-foreground: var(--navy-foreground);
   --color-teal-soft: var(--teal-soft);
-  --color-services-sky: var(--services-sky);
+  --color-services-surface: var(--services-surface);
+  --color-services-ink: var(--services-ink);
+  --color-services-copy: var(--services-copy);
+  --color-services-accent: var(--services-accent);
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
   --color-hero-copy: var(--hero-copy);
@@ -196,19 +199,12 @@
   --hero-stat-accent: var(--primary);
 }
 
-.services-background {
-  background:
-    radial-gradient(ellipse 42% 18% at 86% 14%, color-mix(in oklab, var(--color-background) 38%, transparent), transparent 76%),
-    radial-gradient(ellipse 38% 16% at 8% 64%, color-mix(in oklab, var(--color-background) 30%, transparent), transparent 78%),
-    linear-gradient(to bottom, #d9f2f1 0%, #ddf2f4 50%, #e1f3f7 100%);
-}
-
-.services-heart {
-  color: color-mix(in oklab, var(--color-primary) 15%, transparent);
-}
-
-.service-photo-overlay {
-  background: var(--service-photo-gradient);
+.services-section {
+  --services-surface: #fbf8f3;
+  --services-ink: #1f2a37;
+  --services-copy: #4a5560;
+  --services-accent: #0f6b63;
+  background: var(--services-surface);
 }
 
 .about-background {
@@ -378,18 +374,9 @@
   --navy: oklch(0.365 0.102 257.8);
   --navy-foreground: oklch(1 0 0);
   --teal-soft: oklch(0.955 0.03 186);
-  --services-sky: #5ebccf;
   --whatsapp: oklch(0.756 0.208 149.3);
   --whatsapp-foreground: oklch(0.22 0.025 150);
   --about-photo-shadow: 0 14px 34px color-mix(in oklab, var(--navy) 16%, transparent);
-  --service-photo-gradient: linear-gradient(
-    to top,
-    color-mix(in oklab, var(--foreground) 65%, var(--deep)) 0%,
-    color-mix(in oklab, var(--deep) 94%, transparent) 25%,
-    color-mix(in oklab, var(--deep) 56%, transparent) 48%,
-    color-mix(in oklab, var(--primary) 12%, transparent) 72%,
-    transparent 100%
-  );
   --chart-1: oklch(0.579 0.098 192.1);
   --chart-2: oklch(0.569 0.215 22.8);
   --chart-3: oklch(0.365 0.102 257.8);

@@ -5,6 +5,10 @@ export function whatsappUrl(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
+export function serviceWhatsappUrl(serviceName: string): string {
+  return whatsappUrl(`Olá, vim pelo site e gostaria de saber mais sobre ${serviceName}.`);
+}
+
 export const WHATSAPP_DEFAULT_URL = whatsappUrl(
   "Olá! Gostaria de agendar um atendimento para o meu pet.",
 );

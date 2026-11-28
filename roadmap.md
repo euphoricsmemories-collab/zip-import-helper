@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Reformular somente Serviços com fotos limpas, textos separados, numeração, novo cabeçalho e grade editorial no celular e no computador.
+
 - [x] Ajustar somente a hero: filetes no bloco “10+”, ritmo de espaçamentos, quebras do título e bloco turquesa completo atrás da foto.
 
 - [x] Reformular apenas a primeira seção com fundo sólido, novos textos, botões de contato e serviços e cartão fixo de experiência; preservar foto, logo e demais seções.
